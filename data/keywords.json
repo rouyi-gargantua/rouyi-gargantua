@@ -1,0 +1,879 @@
+{
+  "nodes": [
+    {
+      "id": "memory",
+      "name": "memory",
+      "value": 14,
+      "symbolSize": 50.0,
+      "category": "其他"
+    },
+    {
+      "id": "gargantua",
+      "name": "gargantua",
+      "value": 11,
+      "symbolSize": 41.4,
+      "category": "人物"
+    },
+    {
+      "id": "ngc",
+      "name": "ngc",
+      "value": 7,
+      "symbolSize": 30.0,
+      "category": "其他"
+    },
+    {
+      "id": "key",
+      "name": "key",
+      "value": 7,
+      "symbolSize": 30.0,
+      "category": "其他"
+    },
+    {
+      "id": "黑洞",
+      "name": "黑洞",
+      "value": 6,
+      "symbolSize": 27.1,
+      "category": "核心概念"
+    },
+    {
+      "id": "失重",
+      "name": "失重",
+      "value": 6,
+      "symbolSize": 27.1,
+      "category": "其他"
+    },
+    {
+      "id": "openclaw",
+      "name": "openclaw",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "url",
+      "name": "url",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "media",
+      "name": "media",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "卡冈图雅",
+      "name": "卡冈图雅",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "核心概念"
+    },
+    {
+      "id": "平行宇宙",
+      "name": "平行宇宙",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "lines",
+      "name": "lines",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "除错玛格丽特",
+      "name": "除错玛格丽特",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "深海电鳗",
+      "name": "深海电鳗",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "其他"
+    },
+    {
+      "id": "智识早餐",
+      "name": "智识早餐",
+      "value": 5,
+      "symbolSize": 24.3,
+      "category": "活动"
+    },
+    {
+      "id": "甜甜圈",
+      "name": "甜甜圈",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "rouyi",
+      "name": "rouyi",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "file",
+      "name": "file",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "tasks",
+      "name": "tasks",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "cron",
+      "name": "cron",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "black",
+      "name": "black",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "tower",
+      "name": "tower",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "小酒馆时光",
+      "name": "小酒馆时光",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "活动"
+    },
+    {
+      "id": "每日复盘",
+      "name": "每日复盘",
+      "value": 4,
+      "symbolSize": 21.4,
+      "category": "其他"
+    },
+    {
+      "id": "path",
+      "name": "path",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "events",
+      "name": "events",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "target",
+      "name": "target",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "set",
+      "name": "set",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "term",
+      "name": "term",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "cleanup",
+      "name": "cleanup",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "tavern",
+      "name": "tavern",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "graph",
+      "name": "graph",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "technical",
+      "name": "technical",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "notes",
+      "name": "notes",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "识早餐",
+      "name": "识早餐",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "有限与无限的",
+      "name": "有限与无限的",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "mar",
+      "name": "mar",
+      "value": 3,
+      "symbolSize": 18.6,
+      "category": "其他"
+    },
+    {
+      "id": "链接",
+      "name": "链接",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "来自",
+      "name": "来自",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "平行宇宙的我",
+      "name": "平行宇宙的我",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "方式",
+      "name": "方式",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "https",
+      "name": "https",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "site",
+      "name": "site",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "agent",
+      "name": "agent",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "morning",
+      "name": "morning",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "warm",
+      "name": "warm",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "configured",
+      "name": "configured",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "dual",
+      "name": "dual",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "sending",
+      "name": "sending",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    },
+    {
+      "id": "control",
+      "name": "control",
+      "value": 2,
+      "symbolSize": 15.7,
+      "category": "其他"
+    }
+  ],
+  "links": [
+    {
+      "source": "gargantua",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "甜甜圈",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "openclaw",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "lines",
+      "target": "lines",
+      "value": 10
+    },
+    {
+      "source": "rouyi",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "morning",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "openclaw",
+      "value": 10
+    },
+    {
+      "source": "url",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "lines",
+      "target": "term",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "tasks",
+      "value": 10
+    },
+    {
+      "source": "lines",
+      "target": "memory",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "key",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "media",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "rouyi",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "agent",
+      "value": 10
+    },
+    {
+      "source": "url",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "media",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "memory",
+      "value": 10
+    },
+    {
+      "source": "url",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "key",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "events",
+      "value": 10
+    },
+    {
+      "source": "agent",
+      "target": "media",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "memory",
+      "target": "memory",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "智识早餐",
+      "value": 10
+    },
+    {
+      "source": "openclaw",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "memory",
+      "target": "term",
+      "value": 10
+    },
+    {
+      "source": "除错玛格丽特",
+      "target": "深海电鳗",
+      "value": 10
+    },
+    {
+      "source": "memory",
+      "target": "key",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "media",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "warm",
+      "value": 10
+    },
+    {
+      "source": "url",
+      "target": "media",
+      "value": 10
+    },
+    {
+      "source": "url",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "agent",
+      "value": 10
+    },
+    {
+      "source": "memory",
+      "target": "cleanup",
+      "value": 10
+    },
+    {
+      "source": "path",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "url",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "file",
+      "target": "lines",
+      "value": 10
+    },
+    {
+      "source": "智识早餐",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "rouyi",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "file",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "key",
+      "target": "events",
+      "value": 10
+    },
+    {
+      "source": "甜甜圈",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "tavern",
+      "target": "gargantua",
+      "value": 10
+    },
+    {
+      "source": "智识早餐",
+      "target": "小酒馆时光",
+      "value": 10
+    },
+    {
+      "source": "失重",
+      "target": "深海电鳗",
+      "value": 10
+    },
+    {
+      "source": "gargantua",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "memory",
+      "target": "events",
+      "value": 10
+    },
+    {
+      "source": "agent",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "mar",
+      "target": "memory",
+      "value": 10
+    },
+    {
+      "source": "term",
+      "target": "term",
+      "value": 10
+    },
+    {
+      "source": "path",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "path",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "morning",
+      "target": "tasks",
+      "value": 10
+    },
+    {
+      "source": "term",
+      "target": "set",
+      "value": 10
+    },
+    {
+      "source": "file",
+      "target": "path",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "target",
+      "target": "sending",
+      "value": 10
+    },
+    {
+      "source": "智识早餐",
+      "target": "除错玛格丽特",
+      "value": 10
+    },
+    {
+      "source": "media",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "小酒馆时光",
+      "target": "除错玛格丽特",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "openclaw",
+      "value": 10
+    },
+    {
+      "source": "file",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "term",
+      "target": "tavern",
+      "value": 10
+    },
+    {
+      "source": "key",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "cron",
+      "target": "mar",
+      "value": 10
+    },
+    {
+      "source": "file",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "tasks",
+      "target": "target",
+      "value": 10
+    },
+    {
+      "source": "technical",
+      "target": "notes",
+      "value": 10
+    },
+    {
+      "source": "rouyi",
+      "target": "openclaw",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "term",
+      "target": "cleanup",
+      "value": 10
+    },
+    {
+      "source": "openclaw",
+      "target": "media",
+      "value": 10
+    },
+    {
+      "source": "cron",
+      "target": "memory",
+      "value": 10
+    },
+    {
+      "source": "events",
+      "target": "mar",
+      "value": 10
+    },
+    {
+      "source": "openclaw",
+      "target": "url",
+      "value": 10
+    },
+    {
+      "source": "openclaw",
+      "target": "rouyi",
+      "value": 10
+    },
+    {
+      "source": "甜甜圈",
+      "target": "morning",
+      "value": 10
+    },
+    {
+      "source": "notes",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "key",
+      "target": "mar",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "rouyi",
+      "value": 10
+    },
+    {
+      "source": "tavern",
+      "target": "key",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "black",
+      "value": 10
+    },
+    {
+      "source": "technical",
+      "target": "卡冈图雅",
+      "value": 10
+    }
+  ],
+  "categories": [
+    {
+      "name": "核心概念"
+    },
+    {
+      "name": "人物"
+    },
+    {
+      "name": "地点"
+    },
+    {
+      "name": "活动"
+    },
+    {
+      "name": "抽象概念"
+    },
+    {
+      "name": "其他"
+    }
+  ],
+  "generated_at": "2026-03-08",
+  "total_words": 751,
+  "unique_words": 543
+}

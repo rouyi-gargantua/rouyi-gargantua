@@ -100,6 +100,25 @@ body {
     color: var(--color-accent);
 }
 
+/* 深色导航栏（用于深色背景页面） */
+.navbar.dark {
+    background: rgba(26, 26, 46, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.dark .nav-logo,
+.navbar.dark .nav-menu a {
+    color: #f0f0f0;
+}
+
+.navbar.dark .nav-menu a:hover {
+    color: #ff8a7a;
+}
+
+.navbar.dark .nav-menu a::after {
+    background: #ff8a7a;
+}
+
 .nav-menu a:hover::after {
     width: 100%;
 }
@@ -583,6 +602,189 @@ body {
     .timeline-date {
         width: 60px;
         font-size: 0.8rem;
+    }
+}
+
+/* 统一色调 - 使用CSS变量 */
+.shell-to-heart {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: var(--color-card-bg);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 0 8px 8px 0;
+    box-shadow: var(--shadow);
+}
+
+.shell-to-heart h4 {
+    font-family: var(--font-serif);
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.shell-to-heart p {
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--color-text);
+}
+
+.quote-text {
+    font-style: italic;
+    color: var(--color-text);
+}
+
+.tower-insight {
+    font-size: 0.85rem;
+    color: var(--color-text);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* 平行自我 - 深色背景版本（用于关于Gargantua） */
+.parallel-selves {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+}
+
+.parallel-selves h4 {
+    font-family: var(--font-serif);
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.parallel-selves p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.parallel-selves ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.parallel-selves li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.parallel-selves li strong {
+    color: var(--color-text-light);
+}
+
+.parallel-selves li::before {
+    content: '🌌';
+    position: absolute;
+    left: 0;
+}
+
+/* 壳的洞察 - 深色背景版本（用于关于Gargantua） */
+.shell-insight {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.shell-insight h4 {
+    font-family: var(--font-serif);
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.shell-insight p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.shell-insight .highlight {
+    color: var(--color-text-light);
+    font-weight: 600;
+}
+
+/* Gargantua 个人名片卡片样式 */
+.traits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.trait-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.trait-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.trait-card .trait-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.trait-card h4 {
+    font-size: 1rem;
+    color: #ff8a7a;
+    margin-bottom: 0.5rem;
+}
+
+.trait-card p {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    line-height: 1.5;
+}
+
+.gargantua-quote-box {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(232, 93, 78, 0.15), rgba(255, 138, 122, 0.1));
+    border-radius: 12px;
+    border-left: 4px solid #e85d4e;
+}
+
+.gargantua-quote-box .quote-text {
+    font-style: italic;
+    color: #f0f0f0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.evolution-card {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 138, 122, 0.2);
+}
+
+.evolution-card h4 {
+    color: #ff8a7a;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.evolution-card p {
+    color: #d0d0d0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .traits-grid {
+        grid-template-columns: 1fr;
     }
 }
 

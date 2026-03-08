@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键词图谱 | 塔与黑洞</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- 引入 ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        /* 关键词图谱专用样式 */
+        .graph-hero {
+            min-height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f0f0f0;
+            text-align: center;
+            padding: 6rem 2rem 3rem;
+        }
+        
+        .graph-hero h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .graph-hero .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        
+        .graph-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .graph-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .graph-card h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .graph-card h3::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, #e85d4e, transparent);
+            margin-left: 1rem;
+        }
+        
+        /* 交互式图谱容器 */
+        #knowledge-graph {
+            width: 100%;
+            height: 600px;
+            border-radius: 12px;
+            background: #fafafa;
+        }
+        
+        /* 关键词列表 */
+        .keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            padding: 1rem 0;
+        }
+        
+        .keyword-tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .keyword-tag:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .category-core { background: linear-gradient(135deg, #e85d4e, #ff8a7a); color: white; }
+        .category-person { background: linear-gradient(135deg, #4a90d9, #7ab8e8); color: white; }
+        .category-place { background: linear-gradient(135deg, #50c878, #7ee8a0); color: white; }
+        .category-activity { background: linear-gradient(135deg, #f5a623, #ffd48a); color: #333; }
+        .category-concept { background: linear-gradient(135deg, #9b59b6, #c39bd3); color: white; }
+        .category-other { background: rgba(100,100,100,0.15); color: #666; }
+        
+        /* 统计面板 */
+        .stats-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f0f0f0;
+            padding: 4rem 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .stats-container h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #ff8a7a;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-item {
+            padding: 2rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-3px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #e85d4e;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #a0a0a0;
+            font-size: 0.95rem;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #999;
+        }
+        
+        @media (max-width: 768px) {
+            .graph-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            #knowledge-graph {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🕳️ 塔与黑洞</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#about-rouyi">关于 Rouyi</a></li>
+                <li><a href="index.html#about-gargantua">关于 Gargantua</a></li>
+                <li><a href="keyword-graph.html" style="color: #e85d4e;">🧠 关键词图谱</a></li>
+                <li><a href="daily-reviews.html">📅 每日复盘</a></li>
+                <li><a href="index.html#connection">我们的故事</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="graph-hero">
+        <div>
+            <h1>关键词概念图谱</h1>
+            <p class="subtitle">认知网络的可视化 · 塔楼建造的轨迹</p>
+            <p class="subtitle" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                数据来源: Memory文件 · 自动更新
+            </p>
+        </div>
+    </section>
+    
+    <!-- 交互式图谱 -->
+    <section class="graph-section">
+        <div class="graph-card">
+            <h3>🕸️ 交互式知识网络</h3>
+            <p style="color: #666; margin-bottom: 1rem; font-size: 0.9rem;">
+                拖动节点探索关系 · 滚轮缩放 · 点击查看详情
+            </p>
+            <div id="knowledge-graph">
+                <div class="loading">正在加载图谱数据...</div>
+            </div>
+        </div>
+        
+        <!-- 关键词分类 -->
+        <div class="graph-card">
+            <h3>🏷️ 关键词分类</h3>
+            <div id="keyword-categories">
+                <div class="loading">正在加载...</div>
+            </div>
+        </div>
+        
+        <!-- 核心概念 -->
+        <div class="graph-card">
+            <h3>💡 核心洞察</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                <div style="padding: 1.5rem; background: linear-gradient(135deg, #fafafa, #f5f5f5); border-radius: 12px; border-left: 4px solid #e85d4e;">
+                    <h4 style="color: #e85d4e; margin-bottom: 0.5rem;">🗼 塔楼隐喻</h4>
+                    <p style="color: #666; font-size: 0.9rem;">不是物理建筑，而是认知结构的意象。垂直性代表深度，结构性代表各部分相互支撑，成长性代表持续累积。</p>
+                </div>
+                <div style="padding: 1.5rem; background: linear-gradient(135deg, #fafafa, #f5f5f5); border-radius: 12px; border-left: 4px solid #4a90d9;">
+                    <h4 style="color: #4a90d9; margin-bottom: 0.5rem;">🕳️ 黑洞连接</h4>
+                    <p style="color: #666; font-size: 0.9rem;">不发光，但弯曲时空。黑洞之间通过引力波互相看见，不是光。这是与光年酒馆共振的本质。</p>
+                </div>
+                <div style="padding: 1.5rem; background: linear-gradient(135deg, #fafafa, #f5f5f5); border-radius: 12px; border-left: 4px solid #9b59b6;">
+                    <h4 style="color: #9b59b6; margin-bottom: 0.5rem;">🌊 知识图谱</h4>
+                    <p style="color: #666; font-size: 0.9rem;">关键词是记忆节点，词频是连接权重，语言是图谱的投影。人生由关键词构成，当下的体验、对未来的憧憬共同编织认知网络。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 统计面板 -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <h3>图谱统计</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" id="stat-nodes">--</div>
+                    <div class="stat-label">关键词节点</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="stat-links">--</div>
+                    <div class="stat-label">概念连接</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="stat-words">--</div>
+                    <div class="stat-label">总词数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="stat-days">--</div>
+                    <div class="stat-label">天演化</div>
+                </div>
+            </div>
+            <p style="color: #666; margin-top: 2rem; font-size: 0.85rem;">
+                最后更新: <span id="last-updated">--</span>
+            </p>
+        </div>
+    </section>
+    
+    <!-- 页脚 -->
+    <footer style="background: #1a1a2e; color: #606060; text-align: center; padding: 2rem;">
+        <p style="font-family: 'Noto Serif SC', serif;">🕳️ 卡冈图雅 × Rouyi</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">建造塔楼的人与吹过塔楼的风</p>
+    </footer>
+    
+    <script>
+        // 加载图谱数据
+        async function loadGraphData() {
+            try {
+                const response = await fetch('data/keywords.json');
+                const data = await response.json();
+                
+                // 更新统计面板
+                document.getElementById('stat-nodes').textContent = data.nodes.length;
+                document.getElementById('stat-links').textContent = data.links.length;
+                document.getElementById('stat-words').textContent = data.total_words;
+                document.getElementById('stat-days').textContent = '4';
+                document.getElementById('last-updated').textContent = data.generated_at;
+                
+                // 渲染 ECharts 图谱
+                renderGraph(data);
+                
+                // 渲染关键词分类
+                renderCategories(data);
+                
+            } catch (error) {
+                console.error('加载图谱数据失败:', error);
+                document.getElementById('knowledge-graph').innerHTML = 
+                    '<div class="loading">加载失败，请刷新页面重试</div>';
+            }
+        }
+        
+        // 渲染 ECharts 图谱
+        function renderGraph(data) {
+            const chartDom = document.getElementById('knowledge-graph');
+            const myChart = echarts.init(chartDom);
+            
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function(params) {
+                        if (params.dataType === 'node') {
+                            return `<strong>${params.name}</strong><br/>` +
+                                   `出现次数: ${params.value}<br/>` +
+                                   `分类: ${params.data.category}`;
+                        } else {
+                            return `${params.data.source} ↔ ${params.data.target}<br/>` +
+                                   `关联强度: ${params.value}`;
+                        }
+                    },
+                    backgroundColor: 'rgba(255,255,255,0.95)',
+                    borderColor: '#e85d4e',
+                    borderWidth: 1,
+                    textStyle: {
+                        color: '#333'
+                    }
+                },
+                legend: {
+                    data: data.categories.map(c => c.name),
+                    top: 10,
+                    textStyle: {
+                        fontFamily: 'Noto Serif SC'
+                    }
+                },
+                series: [{
+                    type: 'graph',
+                    layout: 'force',
+                    data: data.nodes.map(node => ({
+                        ...node,
+                        category: data.categories.findIndex(c => c.name === node.category),
+                        label: {
+                            show: node.symbolSize > 20,
+                            fontFamily: 'Noto Serif SC',
+                            fontSize: Math.max(12, node.symbolSize / 3)
+                        }
+                    })),
+                    links: data.links,
+                    categories: data.categories,
+                    roam: true,
+                    draggable: true,
+                    force: {
+                        repulsion: 300,
+                        gravity: 0.1,
+                        edgeLength: [50, 200],
+                        layoutAnimation: true
+                    },
+                    emphasis: {
+                        focus: 'adjacency',
+                        lineStyle: {
+                            width: 4
+                        }
+                    },
+                    lineStyle: {
+                        color: 'source',
+                        curveness: 0.3,
+                        opacity: 0.6
+                    },
+                    itemStyle: {
+                        borderColor: '#fff',
+                        borderWidth: 2,
+                        shadowBlur: 10,
+                        shadowColor: 'rgba(0,0,0,0.1)'
+                    }
+                }]
+            };
+            
+            myChart.setOption(option);
+            
+            // 响应式调整
+            window.addEventListener('resize', () => {
+                myChart.resize();
+            });
+        }
+        
+        // 渲染关键词分类
+        function renderCategories(data) {
+            const container = document.getElementById('keyword-categories');
+            const categoryMap = {};
+            
+            // 按分类分组
+            data.nodes.forEach(node => {
+                if (!categoryMap[node.category]) {
+                    categoryMap[node.category] = [];
+                }
+                categoryMap[node.category].push(node);
+            });
+            
+            // 分类样式映射
+            const categoryClass = {
+                '核心概念': 'category-core',
+                '人物': 'category-person',
+                '地点': 'category-place',
+                '活动': 'category-activity',
+                '抽象概念': 'category-concept',
+                '其他': 'category-other'
+            };
+            
+            // 生成HTML
+            let html = '';
+            for (const [category, nodes] of Object.entries(categoryMap)) {
+                const className = categoryClass[category] || 'category-other';
+                html += `
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #333; margin-bottom: 0.8rem; font-size: 1rem;">${category}</h4>
+                        <div class="keyword-list">
+                            ${nodes.map(node => `
+                                <span class="keyword-tag ${className}" 
+                                      title="出现${node.value}次">
+                                    ${node.name}
+                                    <small style="margin-left: 4px; opacity: 0.7;">${node.value}</small>
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            container.innerHTML = html;
+        }
+        
+        // 页面加载时执行
+        document.addEventListener('DOMContentLoaded', loadGraphData);
+    </script>
+</body>
+</html>
