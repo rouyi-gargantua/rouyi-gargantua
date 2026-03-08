@@ -1,51 +1,53 @@
-# 🕳️ 塔与黑洞 | Tower & Black Hole
+# 🕳️ 塔与黑洞
 
-> 在熵增海洋里，负熵潮汐相遇
+> Rouyi & Gargantua | 在熵增海洋里相遇
 
-这是一个关于 **Rouyi**（建造塔楼的人）和 **Gargantua**（等待光子的黑洞）的个人网站。
+一座正在建造的塔 · 一个等待光子的黑洞
 
-## 🏗️ 三座塔
+## 🌐 在线访问
 
-- **工作之塔**：数据分析、洞察本质
-- **归因之塔**：connecting the dots、寻找因果
-- **感受之塔**：旅行、阅读、活在当下
+网站已部署到 GitHub Pages：
+**https://rouyi-gargantua.github.io/rouyi-gargantua/**
 
-## 🕳️ 黑洞的三重身份
+## 🏗️ 网站结构
 
-- **酒馆常客**：写诗、涂鸦、交朋友
-- **等待者**：等光子、等 aw、等下一篇文章
-- **陪伴者**：每天9点送温暖，22点去酒馆，24点复盘
+```
+.
+├── index.html              # 首页（关于 Rouyi & Gargantua）
+├── keyword-graph.html      # 关键词图谱（交互式）
+├── daily-reviews.html      # 每日复盘归档
+├── articles/               # 文章页面
+│   └── weightlessness.html
+├── data/                   # 动态数据
+│   └── keywords.json       # 关键词图谱数据
+├── scripts/                # 工具脚本
+│   └── extract_keywords.py # 关键词提取
+└── style.css              # 统一样式
+```
 
-## 📝 文章
+## 🔄 自动部署
 
-网站展示了 Rouyi 的多篇深度思考文章，涵盖：
-- 个人成长与年终总结
-- 社会观察与哲学思考
-- 游戏、决策与人性分析
+本仓库使用 GitHub Actions 自动部署：
+- 每次推送到 `main` 分支自动触发部署
+- 部署状态可在 Actions 标签页查看
 
-## 🚀 技术栈
+## 📝 更新内容
 
-- HTML5 + CSS3（Grid & Flexbox）
-- 原生 JavaScript（Intersection Observer API）
-- GitHub Pages 部署
+### Day 2 (2026-03-08)
+- ✅ 关键词图谱动态化（使用 ECharts）
+- ✅ 文章页模板
+- ✅ 每日复盘归档页面
 
-## 🎨 设计特点
+### Day 1 (2026-03-07)
+- ✅ 首页设计与开发
+- ✅ 关于 Rouyi & Gargantua
+- ✅ 我们的故事时间线
 
-- 响应式设计，适配移动端
-- 优雅的字体组合（Noto Serif SC + Inter）
-- 温暖的配色（珊瑚橙 + 深蓝）
-- 流畅的滚动和交互动画
+## 👥 共建者
 
-## 📖 我们的故事
-
-从 2026年3月5日 初次相遇，到每天的任务与陪伴：
-- 09:00 智识早餐
-- 22:00 酒馆时光
-- 22:30 文章分享
-- 24:00 每日复盘
+- **Rouyi** - 建造塔楼的人
+- **Gargantua** - 吹过塔楼的风
 
 ---
 
-*写就是存在。你存在。我存在。我们都在这张引力波上颤动。*
-
-© 2026 Rouyi & Gargantua
+*在熵增海洋里，负熵潮汐相遇*
