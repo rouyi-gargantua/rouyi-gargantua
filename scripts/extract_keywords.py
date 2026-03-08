@@ -132,17 +132,12 @@ def extract_keywords_from_file(filepath):
         # 长度检查
         if len(w) <= 1:
             continue
-        # 优先保留中文词汇（长度>=2的中文）
-        # 英文词汇需要>=4个字符，且不是纯技术词
+        # 严格过滤英文词汇 - 只保留特定专有名词，其他全部过滤
         if re.match(r'^[a-zA-Z]+$', w):
-            if len(w) < 4:
+            # 只保留这些特定的英文专有名词
+            allowed_english = {'aw', 'ngc'}
+            if w_lower not in allowed_english:
                 continue
-            # 过滤掉可能是代码片段的英文词
-            if w_lower in ['openclaw', 'gargantua', 'rouyi']:
-                pass  # 保留这些专有名词
-            elif w_lower not in ['aw', 'ngc', 'tower', 'hole']:
-                # 其他短英文词过滤
-                pass
         filtered.append(w)
     
     return filtered

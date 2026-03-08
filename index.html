@@ -12,7 +12,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">🕳️ 塔与黑洞</a>
-            <ul class="nav-menu">
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#about-rouyi">关于 Rouyi</a></li>
                 <li><a href="#about-gargantua">关于 Gargantua</a></li>
                 <li><a href="#articles">文章</a></li>
@@ -22,6 +23,12 @@
             </ul>
         </div>
     </nav>
+    
+    <script>
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+    </script>
 
     <!-- Hero Section -->
     <section class="hero">
