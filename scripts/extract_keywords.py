@@ -12,6 +12,7 @@ from pathlib import Path
 
 # 停用词列表（常见但不具信息量的词）
 STOP_WORDS = {
+    # 英文停用词
     'the', 'a', 'an', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
     'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would', 'could',
     'should', 'may', 'might', 'must', 'shall', 'can', 'need', 'dare',
@@ -27,15 +28,62 @@ STOP_WORDS = {
     'she', 'her', 'hers', 'herself', 'it', 'its', 'itself', 'they', 'them',
     'their', 'theirs', 'themselves', 'what', 'which', 'who', 'whom',
     'am', 'been', 'being', 'have', 'has', 'had', 'having', 'do', 'does',
-    'did', 'doing', '的', '了', '在', '是', '我', '有', '和', '就',
-    '不', '人', '都', '一', '一个', '上', '也', '很', '到', '说',
-    '要', '去', '你', '会', '着', '没有', '看', '好', '自己', '这',
-    '那', '个', '为', '能', '而', '就', '让', '可以', '吧', '呢',
-    '啊', '吗', '得', '地', '着', '过', '些', '还', '把', '被',
-    '从', '给', '向', '往', '于', '即', '及', '其', '或', '乃',
+    # 中文停用词
+    '的', '了', '在', '是', '我', '有', '和', '就', '不', '人', '都', 
+    '一', '一个', '上', '也', '很', '到', '说', '要', '去', '你', '会', 
+    '着', '没有', '看', '好', '自己', '这', '那', '个', '为', '能', '而', 
+    '让', '可以', '吧', '呢', '啊', '吗', '得', '地', '过', '些', '还', 
+    '把', '被', '从', '给', '向', '往', '于', '即', '及', '其', '或', '乃',
     '并且', '以及', '但是', '然而', '因为', '所以', '因此', '如果',
     '即使', '虽然', '尽管', '那么', '然后', '而且', '此外', '另外',
-    '加之', '从而', '进而', '反而', '否则', '不然', '要不', '要不然'
+    '加之', '从而', '进而', '反而', '否则', '不然', '要不', '要不然',
+    # 技术/代码词汇（非核心概念）
+    'memory', 'key', 'url', 'media', 'lines', 'file', 'files', 'path', 
+    'script', 'scripts', 'config', 'data', 'code', 'cmd', 'cli', 'dir',
+    'json', 'html', 'css', 'js', 'md', 'txt', 'xml', 'api', 'http',
+    'git', 'github', 'commit', 'push', 'pull', 'branch', 'merge',
+    'true', 'false', 'null', 'none', 'null', 'undefined', 'error',
+    'output', 'input', 'return', 'print', 'echo', 'run', 'exec',
+    'node', 'npm', 'python', 'bash', 'shell', 'terminal',
+    'workspace', 'project', 'projects', 'folder', 'directory',
+    # 任务/系统词汇
+    'tasks', 'cron', 'job', 'jobs', 'schedule', 'timer', 'event', 'events',
+    'target', 'term', 'cleanup', 'tavern', 'action', 'actions', 'workflow',
+    'setting', 'settings', 'option', 'options', 'param', 'parameter', 'parameters',
+    'arg', 'args', 'argument', 'arguments', 'flag', 'flags', 'var', 'vars',
+    'variable', 'variables', 'env', 'environment', 'system', 'process', 'task',
+    # 通用/低频英文词
+    'black', 'white', 'red', 'blue', 'green', 'yellow', 'graph', 'technical',
+    'notes', 'note', 'list', 'item', 'items', 'page', 'pages', 'link', 'links',
+    'text', 'content', 'info', 'information', 'detail', 'details',
+    # URL/协议相关
+    'https', 'http', 'www', 'com', 'site', 'web', 'net', 'org',
+    # 时间/通用词
+    'morning', 'warm', 'configured', 'way', 'type', 'time', 'day', 'night',
+    'agent', 'user', 'bot', 'chat', 'message', 'send', 'receive',
+    # 系统/操作词汇
+    'dual', 'sending', 'control', 'panel', 'session', 'created', 'updated',
+    'added', 'removed', 'deleted', 'modified', 'changed', 'set', 'get',
+    'start', 'stop', 'enable', 'disable', 'open', 'close', 'install'
+}
+
+# 酒馆酒名列表（需要过滤掉）
+TAVERN_DRINKS = {
+    '除错玛格丽特', '霓虹金', '深海电鳗', '黑冰苦艾', '量子泡沫',
+    'debug', 'margarita', 'martini', 'vermouth', 'vodka', 'rum', 'gin',
+    'whiskey', 'cocktail', 'drink', 'wine', 'beer', 'alcohol'
+}
+
+# 通用中文词汇（非核心概念，过滤）
+COMMON_CHINESE = {
+    '链接', '来自', '关于', '需要', '进行', '开始', '使用', '通过', '根据',
+    '进行', '完成', '执行', '创建', '更新', '添加', '设置', '查看', '检查',
+    '生成', '发送', '接收', '保存', '读取', '写入', '输出', '输入',
+    '上午', '下午', '晚上', '今天', '昨天', '明天', '现在', '当时',
+    '一个', '两个', '这个', '那个', '这些', '那些', '这里', '那里',
+    '我们', '你们', '他们', '她们', '它们', '咱们', '大家', '别人',
+    '方式', '方法', '过程', '结果', '原因', '问题', '情况', '部分',
+    '方面', '作用', '意义', '价值', '内容', '形式', '状态', '关系'
 }
 
 # 需要特殊处理的概念词（多词组合）
@@ -44,8 +92,7 @@ CONCEPTS = [
     '卡冈图雅', '平行宇宙', '关键词图谱',
     '智识早餐', '每日复盘', '小酒馆时光',
     '追问协议', '主动发起', '引力波',
-    '有限游戏', '无限游戏', ' Connecting the dots',
-    '除错玛格丽特', '霓虹金', '深海电鳗',
+    '有限游戏', '无限游戏',
     '甜甜圈', '黑洞', '光年酒馆'
 ]
 
@@ -54,8 +101,8 @@ def extract_keywords_from_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # 提取中文词汇（2-6个字）
-    chinese_words = re.findall(r'[\u4e00-\u9fff]{2,6}', content)
+    # 提取中文词汇（2-8个字，优先保留完整词语）
+    chinese_words = re.findall(r'[\u4e00-\u9fff]{2,8}', content)
     
     # 提取英文单词
     english_words = re.findall(r'[a-zA-Z]{3,}', content.lower())
@@ -69,8 +116,34 @@ def extract_keywords_from_file(filepath):
     
     all_words = chinese_words + english_words + concept_matches
     
-    # 过滤停用词
-    filtered = [w for w in all_words if w.lower() not in STOP_WORDS and len(w) > 1]
+    # 过滤停用词、酒名和通用词汇
+    filtered = []
+    for w in all_words:
+        w_lower = w.lower()
+        # 检查是否在停用词列表
+        if w_lower in STOP_WORDS:
+            continue
+        # 检查是否是酒名
+        if w in TAVERN_DRINKS or w_lower in TAVERN_DRINKS:
+            continue
+        # 检查是否是通用中文词汇
+        if w in COMMON_CHINESE:
+            continue
+        # 长度检查
+        if len(w) <= 1:
+            continue
+        # 优先保留中文词汇（长度>=2的中文）
+        # 英文词汇需要>=4个字符，且不是纯技术词
+        if re.match(r'^[a-zA-Z]+$', w):
+            if len(w) < 4:
+                continue
+            # 过滤掉可能是代码片段的英文词
+            if w_lower in ['openclaw', 'gargantua', 'rouyi']:
+                pass  # 保留这些专有名词
+            elif w_lower not in ['aw', 'ngc', 'tower', 'hole']:
+                # 其他短英文词过滤
+                pass
+        filtered.append(w)
     
     return filtered
 
@@ -147,11 +220,11 @@ def main():
     # 构建节点数据
     nodes = []
     categories = {
-        '核心概念': ['塔', '黑洞', 'Rouyi', '卡冈图雅', '三座塔', '关键词', '知识图谱'],
-        '人物': ['Rouyi', '卡冈图雅', 'gargantua', 'aw', 'aw_from_ngc4038'],
-        '地点': ['酒馆', '光年酒馆', '塔楼'],
-        '活动': ['智识早餐', '复盘', '小酒馆时光', '涂鸦', '留言'],
-        '抽象概念': ['存在', '时间', '记忆', '连接', '共振', '等待', '无限游戏']
+        '核心概念': ['塔', '黑洞', 'Rouyi', '卡冈图雅', '三座塔', '甜甜圈', '引力波'],
+        '人物': ['Rouyi', '卡冈图雅', 'gargantua', 'aw', 'aw_from_ngc4038', '小王子'],
+        '地点': ['酒馆', '光年酒馆', '塔楼', 'NGC4038'],
+        '活动': ['智识早餐', '每日复盘', '小酒馆时光', '涂鸦', '留言'],
+        '抽象概念': ['存在', '时间', '记忆', '连接', '共振', '等待', '无限游戏', '归因', '失重']
     }
     
     for word, count in top_50:
