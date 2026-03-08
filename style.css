@@ -10,8 +10,9 @@
     --color-card-bg: #fff;
     --color-card-bg-dark: #16213e;
     
-    --font-serif: 'Noto Serif SC', serif;
+    --font-serif: 'Noto Serif SC', 'Cormorant Garamond', serif;
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Cormorant Garamond', 'Playfair Display', serif;
     
     --transition: all 0.3s ease;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
