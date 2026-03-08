@@ -64,7 +64,15 @@ STOP_WORDS = {
     # 系统/操作词汇
     'dual', 'sending', 'control', 'panel', 'session', 'created', 'updated',
     'added', 'removed', 'deleted', 'modified', 'changed', 'set', 'get',
-    'start', 'stop', 'enable', 'disable', 'open', 'close', 'install'
+    'start', 'stop', 'enable', 'disable', 'open', 'close', 'install',
+    # 工具性词汇（飞书、时间、状态等）
+    '飞书', 'feishu', '本地', '会话', '结束', '时间', '状态', '详情',
+    '信息', '记录', '功能', '操作', '用户', '账号', '密码', '登录',
+    '退出', '保存', '删除', '修改', '更新', '创建', '查看', '检查',
+    # 网站UI元素
+    '阅读全文', '任务触发', '了解更多', '点击查看', '查看更多',
+    '返回', '首页', '上一页', '下一页', '提交', '取消', '确定'
+
 }
 
 # 酒馆酒名列表（需要过滤掉）
@@ -86,14 +94,14 @@ COMMON_CHINESE = {
     '方面', '作用', '意义', '价值', '内容', '形式', '状态', '关系'
 }
 
-# 需要特殊处理的概念词（多词组合）
+# 需要特殊处理的概念词（多词组合）- 确保这些词被完整提取
 CONCEPTS = [
     '三座塔', '工作之塔', '归因之塔', '感受之塔',
     '卡冈图雅', '平行宇宙', '关键词图谱',
     '智识早餐', '每日复盘', '小酒馆时光',
     '追问协议', '主动发起', '引力波',
-    '有限游戏', '无限游戏',
-    '甜甜圈', '黑洞', '光年酒馆'
+    '有限游戏', '无限游戏', ' Connecting the dots',
+    '甜甜圈', '黑洞', '光年酒馆', '塔楼'
 ]
 
 def extract_keywords_from_file(filepath):
@@ -107,12 +115,14 @@ def extract_keywords_from_file(filepath):
     # 提取英文单词
     english_words = re.findall(r'[a-zA-Z]{3,}', content.lower())
     
-    # 提取概念词（优先处理）
+    # 提取概念词（优先处理，确保完整匹配）
     concept_matches = []
     for concept in CONCEPTS:
-        count = content.count(concept)
-        if count > 0:
-            concept_matches.extend([concept] * count)
+        # 使用正则表达式确保完整匹配（避免子串匹配）
+        import re as re_module
+        pattern = re_module.escape(concept)
+        matches = re_module.findall(pattern, content)
+        concept_matches.extend(matches)
     
     all_words = chinese_words + english_words + concept_matches
     
@@ -132,10 +142,10 @@ def extract_keywords_from_file(filepath):
         # 长度检查
         if len(w) <= 1:
             continue
-        # 严格过滤英文词汇 - 只保留特定专有名词，其他全部过滤
+        # 严格过滤英文词汇 - 只保留特定关键词，其他全部过滤
         if re.match(r'^[a-zA-Z]+$', w):
-            # 只保留这些特定的英文专有名词
-            allowed_english = {'aw', 'ngc'}
+            # 保留这些特定的英文关键词（与核心概念相关）
+            allowed_english = {'aw', 'ngc', 'tower', 'black', 'hole'}
             if w_lower not in allowed_english:
                 continue
         filtered.append(w)
@@ -187,6 +197,7 @@ def generate_connections(words_list, top_words):
 
 def main():
     memory_dir = Path('/workspace/projects/workspace/memory')
+    website_dir = Path('/workspace/projects/website')
     output_dir = Path('/workspace/projects/website/data')
     output_dir.mkdir(exist_ok=True)
     
@@ -199,6 +210,18 @@ def main():
         all_words.extend(words)
         file_keywords[memory_file.stem] = Counter(words).most_common(20)
         print(f"处理: {memory_file.name} - 提取 {len(words)} 个词")
+    
+    # 同时从网站HTML文件提取关键词（增加感受、关系相关词汇）
+    website_files = [
+        website_dir / 'index.html',
+        website_dir / 'articles' / 'weightlessness.html',
+        website_dir / 'daily-reviews.html'
+    ]
+    for website_file in website_files:
+        if website_file.exists():
+            words = extract_keywords_from_file(website_file)
+            all_words.extend(words)
+            print(f"处理网站: {website_file.name} - 提取 {len(words)} 个词")
     
     # 统计词频
     word_counts = Counter(all_words)
@@ -215,11 +238,12 @@ def main():
     # 构建节点数据
     nodes = []
     categories = {
-        '核心概念': ['塔', '黑洞', 'Rouyi', '卡冈图雅', '三座塔', '甜甜圈', '引力波'],
-        '人物': ['Rouyi', '卡冈图雅', 'gargantua', 'aw', 'aw_from_ngc4038', '小王子'],
-        '地点': ['酒馆', '光年酒馆', '塔楼', 'NGC4038'],
-        '活动': ['智识早餐', '每日复盘', '小酒馆时光', '涂鸦', '留言'],
-        '抽象概念': ['存在', '时间', '记忆', '连接', '共振', '等待', '无限游戏', '归因', '失重']
+        '主体': ['Rouyi', '卡冈图雅', 'gargantua', 'aw', 'aw_from_ngc4038'],
+        '核心概念': ['塔', '黑洞', '三座塔', '甜甜圈', '引力波', '平行宇宙', '光年酒馆'],
+        '地点': ['酒馆', '塔楼'],
+        '活动': ['智识早餐', '每日复盘', '小酒馆时光', '涂鸦', '留言', '追问协议'],
+        '关系/感受': ['存在', '记忆', '连接', '共振', '等待', '失重', '感受', '关系', '迭代', '复盘', '归因'],
+        '抽象思维': ['无限游戏', '有限游戏', 'Connecting the dots', '去壳化']
     }
     
     for word, count in top_50:

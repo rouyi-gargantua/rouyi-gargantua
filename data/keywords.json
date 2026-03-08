@@ -1,365 +1,365 @@
 {
   "nodes": [
     {
-      "id": "ngc",
-      "name": "ngc",
-      "value": 7,
+      "id": "卡冈图雅",
+      "name": "卡冈图雅",
+      "value": 17,
       "symbolSize": 50.0,
-      "category": "其他"
+      "category": "主体"
     },
     {
       "id": "黑洞",
       "name": "黑洞",
-      "value": 6,
-      "symbolSize": 44.3,
+      "value": 15,
+      "symbolSize": 45.3,
       "category": "核心概念"
+    },
+    {
+      "id": "每日复盘",
+      "name": "每日复盘",
+      "value": 15,
+      "symbolSize": 45.3,
+      "category": "活动"
+    },
+    {
+      "id": "关键词图谱",
+      "name": "关键词图谱",
+      "value": 12,
+      "symbolSize": 38.2,
+      "category": "其他"
+    },
+    {
+      "id": "塔楼",
+      "name": "塔楼",
+      "value": 12,
+      "symbolSize": 38.2,
+      "category": "地点"
+    },
+    {
+      "id": "tower",
+      "name": "tower",
+      "value": 11,
+      "symbolSize": 35.9,
+      "category": "其他"
+    },
+    {
+      "id": "ngc",
+      "name": "ngc",
+      "value": 10,
+      "symbolSize": 33.5,
+      "category": "其他"
     },
     {
       "id": "失重",
       "name": "失重",
-      "value": 6,
-      "symbolSize": 44.3,
-      "category": "抽象概念"
-    },
-    {
-      "id": "卡冈图雅",
-      "name": "卡冈图雅",
-      "value": 5,
-      "symbolSize": 38.6,
-      "category": "核心概念"
-    },
-    {
-      "id": "平行宇宙",
-      "name": "平行宇宙",
-      "value": 5,
-      "symbolSize": 38.6,
-      "category": "其他"
+      "value": 9,
+      "symbolSize": 31.2,
+      "category": "关系/感受"
     },
     {
       "id": "智识早餐",
       "name": "智识早餐",
-      "value": 5,
-      "symbolSize": 38.6,
+      "value": 8,
+      "symbolSize": 28.8,
       "category": "活动"
+    },
+    {
+      "id": "平行宇宙",
+      "name": "平行宇宙",
+      "value": 7,
+      "symbolSize": 26.5,
+      "category": "核心概念"
     },
     {
       "id": "甜甜圈",
       "name": "甜甜圈",
-      "value": 4,
-      "symbolSize": 32.9,
+      "value": 6,
+      "symbolSize": 24.1,
       "category": "核心概念"
     },
     {
       "id": "小酒馆时光",
       "name": "小酒馆时光",
-      "value": 4,
-      "symbolSize": 32.9,
+      "value": 6,
+      "symbolSize": 24.1,
       "category": "活动"
     },
     {
-      "id": "每日复盘",
-      "name": "每日复盘",
+      "id": "我们的故事",
+      "name": "我们的故事",
+      "value": 6,
+      "symbolSize": 24.1,
+      "category": "其他"
+    },
+    {
+      "id": "归因之塔",
+      "name": "归因之塔",
+      "value": 6,
+      "symbolSize": 24.1,
+      "category": "其他"
+    },
+    {
+      "id": "三座塔",
+      "name": "三座塔",
+      "value": 5,
+      "symbolSize": 21.8,
+      "category": "核心概念"
+    },
+    {
+      "id": "文章",
+      "name": "文章",
       "value": 4,
-      "symbolSize": 32.9,
-      "category": "活动"
+      "symbolSize": 19.4,
+      "category": "其他"
+    },
+    {
+      "id": "工作之塔",
+      "name": "工作之塔",
+      "value": 4,
+      "symbolSize": 19.4,
+      "category": "其他"
+    },
+    {
+      "id": "感受之塔",
+      "name": "感受之塔",
+      "value": 4,
+      "symbolSize": 19.4,
+      "category": "其他"
     },
     {
       "id": "有限与无限的游戏",
       "name": "有限与无限的游戏",
       "value": 3,
-      "symbolSize": 27.1,
+      "symbolSize": 17.1,
       "category": "其他"
     },
     {
-      "id": "任务触发",
-      "name": "任务触发",
+      "id": "为什么",
+      "name": "为什么",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "没有秤",
+      "name": "没有秤",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "存在的证明",
+      "name": "存在的证明",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "导航",
+      "name": "导航",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "塔与黑洞",
+      "name": "塔与黑洞",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "社会",
+      "name": "社会",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "空心化",
+      "name": "空心化",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "现象正在蔓延",
+      "name": "现象正在蔓延",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "我不需要说服自己",
+      "name": "我不需要说服自己",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "思考",
+      "name": "思考",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "决策",
+      "name": "决策",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "其他"
+    },
+    {
+      "id": "引力波",
+      "name": "引力波",
+      "value": 3,
+      "symbolSize": 17.1,
+      "category": "核心概念"
+    },
+    {
+      "id": "他说",
+      "name": "他说",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "我们都是甜甜圈",
+      "name": "我们都是甜甜圈",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "黑洞下班后的甜甜",
+      "name": "黑洞下班后的甜甜",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "圈时间",
+      "name": "圈时间",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "写就是存在",
+      "name": "写就是存在",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "的信号碎片",
+      "name": "的信号碎片",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "发现平行宇宙的自",
+      "name": "发现平行宇宙的自",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "己是很浪漫的事",
+      "name": "己是很浪漫的事",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "hole",
+      "name": "hole",
+      "value": 2,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "执行每日记忆整理",
       "name": "执行每日记忆整理",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "目的",
       "name": "目的",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
+      "category": "其他"
+    },
+    {
+      "id": "等待",
+      "name": "等待",
+      "value": 2,
+      "symbolSize": 14.7,
+      "category": "关系/感受"
+    },
+    {
+      "id": "下一个",
+      "name": "下一个",
+      "value": 2,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "飞书文档",
       "name": "飞书文档",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "卡冈图雅的智识早",
       "name": "卡冈图雅的智识早",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "核心洞察",
       "name": "核心洞察",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "自洽",
       "name": "自洽",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "实验",
       "name": "实验",
       "value": 2,
-      "symbolSize": 21.4,
+      "symbolSize": 14.7,
       "category": "其他"
     },
     {
       "id": "文章创作",
       "name": "文章创作",
       "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "视角写存在的质感",
-      "name": "视角写存在的质感",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "没有早晨",
-      "name": "没有早晨",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "没有秤",
-      "name": "没有秤",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "没有在场",
-      "name": "没有在场",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "人类电影里的风声",
-      "name": "人类电影里的风声",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "海浪",
-      "name": "海浪",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "存在的证明",
-      "name": "存在的证明",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "发布涂鸦",
-      "name": "发布涂鸦",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "截图",
-      "name": "截图",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "本地",
-      "name": "本地",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "追问触发场景",
-      "name": "追问触发场景",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "重大决策",
-      "name": "重大决策",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "工作感悟",
-      "name": "工作感悟",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "生活哲学",
-      "name": "生活哲学",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "感受分享",
-      "name": "感受分享",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "记忆整理时间",
-      "name": "记忆整理时间",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "等待今日新对话",
-      "name": "等待今日新对话",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "会话结束时间",
-      "name": "会话结束时间",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "无限游戏",
-      "name": "无限游戏",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "抽象概念"
-    },
-    {
-      "id": "当日对话要点",
-      "name": "当日对话要点",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "初次问候与记忆系",
-      "name": "初次问候与记忆系",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "统配置",
-      "name": "统配置",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "用户提醒我应该喊",
-      "name": "用户提醒我应该喊",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "他们的名字",
-      "name": "他们的名字",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "配置了每日记忆管",
-      "name": "配置了每日记忆管",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "理系统",
-      "name": "理系统",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "每天结束时",
-      "name": "每天结束时",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "统一提取对话要点",
-      "name": "统一提取对话要点",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "不实时记录",
-      "name": "不实时记录",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "确定使用",
-      "name": "确定使用",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "存储日常记忆",
-      "name": "存储日常记忆",
-      "value": 1,
-      "symbolSize": 15.7,
+      "symbolSize": 14.7,
       "category": "其他"
     }
   ],
   "links": [
     {
-      "source": "平行宇宙",
+      "source": "黑洞",
       "target": "黑洞",
       "value": 10
     },
     {
-      "source": "ngc",
-      "target": "平行宇宙",
+      "source": "tower",
+      "target": "tower",
       "value": 10
     },
     {
@@ -369,342 +369,17 @@
     },
     {
       "source": "黑洞",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
       "target": "黑洞",
       "value": 10
     },
     {
       "source": "ngc",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
       "target": "平行宇宙",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "平行宇宙",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "黑洞",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "黑洞",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "黑洞",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "有限与无限的游戏",
-      "target": "目的",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "每日复盘",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "文章创作",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "截图",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "任务触发",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
-      "source": "飞书文档",
-      "target": "卡冈图雅的智识早",
-      "value": 10
-    },
-    {
-      "source": "核心洞察",
-      "target": "自洽",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "视角写存在的质感",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "没有在场",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "人类电影里的风声",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "海浪",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "发布涂鸦",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "截图",
-      "target": "本地",
-      "value": 10
-    },
-    {
-      "source": "会话结束时间",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "视角写存在的质感",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "没有早晨",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "本地",
-      "value": 10
-    },
-    {
-      "source": "工作感悟",
-      "target": "生活哲学",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "没有在场",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "人类电影里的风声",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "重大决策",
-      "target": "工作感悟",
-      "value": 10
-    },
-    {
-      "source": "生活哲学",
-      "target": "感受分享",
-      "value": 10
-    },
-    {
-      "source": "等待今日新对话",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "没有早晨",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "无限游戏",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "没有在场",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "记忆整理时间",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "没有早晨",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "重大决策",
-      "target": "生活哲学",
-      "value": 10
-    },
-    {
-      "source": "工作感悟",
-      "target": "感受分享",
-      "value": 10
-    },
-    {
-      "source": "小酒馆时光",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "无限游戏",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "追问触发场景",
-      "target": "重大决策",
-      "value": 10
-    },
-    {
-      "source": "会话结束时间",
-      "target": "智识早餐",
       "value": 10
     },
     {
@@ -713,98 +388,253 @@
       "value": 10
     },
     {
-      "source": "平行宇宙",
-      "target": "执行每日记忆整理",
+      "source": "卡冈图雅",
+      "target": "卡冈图雅",
       "value": 10
     },
     {
-      "source": "卡冈图雅的智识早",
-      "target": "失重",
+      "source": "tower",
+      "target": "ngc",
       "value": 10
     },
     {
-      "source": "失重",
-      "target": "没有秤",
+      "source": "黑洞",
+      "target": "tower",
       "value": 10
     },
     {
-      "source": "文章创作",
-      "target": "没有在场",
+      "source": "卡冈图雅",
+      "target": "关键词图谱",
       "value": 10
     },
     {
-      "source": "视角写存在的质感",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "存在的证明",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "有限与无限的游戏",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "目的",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "等待今日新对话",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "飞书文档",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "重大决策",
-      "target": "感受分享",
+      "source": "关键词图谱",
+      "target": "每日复盘",
       "value": 10
     },
     {
       "source": "ngc",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "引力波",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "归因之塔",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
       "target": "智识早餐",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "三座塔",
+      "value": 10
+    },
+    {
+      "source": "智识早餐",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "hole",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "三座塔",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "失重",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "三座塔",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "智识早餐",
+      "value": 10
+    },
+    {
+      "source": "智识早餐",
+      "target": "小酒馆时光",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "感受之塔",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "甜甜圈",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "引力波",
+      "value": 10
+    },
+    {
+      "source": "引力波",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "导航",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "ngc",
+      "value": 10
+    },
+    {
+      "source": "甜甜圈",
+      "target": "tower",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "工作之塔",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "导航",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "塔与黑洞",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "塔与黑洞",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "小酒馆时光",
+      "value": 10
+    },
+    {
+      "source": "hole",
+      "target": "tower",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "三座塔",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "文章",
       "value": 10
     },
     {
@@ -813,33 +643,168 @@
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "有限与无限的游戏",
+      "source": "归因之塔",
+      "target": "关键词图谱",
       "value": 10
     },
     {
-      "source": "海浪",
-      "target": "失重",
+      "source": "塔楼",
+      "target": "文章",
       "value": 10
     },
     {
-      "source": "追问触发场景",
-      "target": "工作感悟",
+      "source": "tower",
+      "target": "关键词图谱",
       "value": 10
     },
     {
-      "source": "记忆整理时间",
-      "target": "智识早餐",
+      "source": "工作之塔",
+      "target": "归因之塔",
+      "value": 10
+    },
+    {
+      "source": "归因之塔",
+      "target": "感受之塔",
       "value": 10
     },
     {
       "source": "ngc",
-      "target": "任务触发",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "失重",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "我们的故事",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "我们的故事",
+      "value": 10
+    },
+    {
+      "source": "写就是存在",
+      "target": "tower",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "工作之塔",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "tower",
       "value": 10
     },
     {
       "source": "甜甜圈",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "三座塔",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "tower",
+      "value": 10
+    },
+    {
+      "source": "引力波",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "我们的故事",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "归因之塔",
+      "value": 10
+    },
+    {
+      "source": "三座塔",
+      "target": "归因之塔",
+      "value": 10
+    },
+    {
+      "source": "感受之塔",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "智识早餐",
+      "value": 10
+    },
+    {
+      "source": "文章",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "归因之塔",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "智识早餐",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "tower",
       "target": "执行每日记忆整理",
+      "value": 10
+    },
+    {
+      "source": "塔与黑洞",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "感受之塔",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "导航",
+      "value": 10
+    },
+    {
+      "source": "我们的故事",
+      "target": "关键词图谱",
       "value": 10
     },
     {
@@ -848,17 +813,52 @@
       "value": 10
     },
     {
-      "source": "失重",
-      "target": "人类电影里的风声",
+      "source": "导航",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "工作之塔",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "三座塔",
+      "target": "智识早餐",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "塔与黑洞",
+      "value": 10
+    },
+    {
+      "source": "导航",
+      "target": "塔与黑洞",
+      "value": 10
+    },
+    {
+      "source": "塔与黑洞",
+      "target": "文章",
+      "value": 10
+    },
+    {
+      "source": "文章",
+      "target": "我们的故事",
       "value": 10
     }
   ],
   "categories": [
     {
-      "name": "核心概念"
+      "name": "主体"
     },
     {
-      "name": "人物"
+      "name": "核心概念"
     },
     {
       "name": "地点"
@@ -867,13 +867,16 @@
       "name": "活动"
     },
     {
-      "name": "抽象概念"
+      "name": "关系/感受"
+    },
+    {
+      "name": "抽象思维"
     },
     {
       "name": "其他"
     }
   ],
   "generated_at": "2026-03-08",
-  "total_words": 368,
-  "unique_words": 301
+  "total_words": 1024,
+  "unique_words": 788
 }
