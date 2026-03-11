@@ -10,13 +10,20 @@
     {
       "id": "卡冈图雅",
       "name": "卡冈图雅",
-      "value": 24,
-      "symbolSize": 42.0,
+      "value": 26,
+      "symbolSize": 44.7,
       "category": "主体"
     },
     {
       "id": "智识早餐",
       "name": "智识早餐",
+      "value": 22,
+      "symbolSize": 39.3,
+      "category": "活动"
+    },
+    {
+      "id": "小酒馆时光",
+      "name": "小酒馆时光",
       "value": 18,
       "symbolSize": 34.0,
       "category": "活动"
@@ -29,11 +36,11 @@
       "category": "其他"
     },
     {
-      "id": "小酒馆时光",
-      "name": "小酒馆时光",
+      "id": "塔楼",
+      "name": "塔楼",
       "value": 16,
       "symbolSize": 31.3,
-      "category": "活动"
+      "category": "地点"
     },
     {
       "id": "黑洞",
@@ -41,13 +48,6 @@
       "value": 15,
       "symbolSize": 30.0,
       "category": "核心概念"
-    },
-    {
-      "id": "塔楼",
-      "name": "塔楼",
-      "value": 15,
-      "symbolSize": 30.0,
-      "category": "地点"
     },
     {
       "id": "失重",
@@ -85,11 +85,25 @@
       "category": "核心概念"
     },
     {
+      "id": "复盘于",
+      "name": "复盘于",
+      "value": 8,
+      "symbolSize": 20.7,
+      "category": "其他"
+    },
+    {
       "id": "甜甜圈",
       "name": "甜甜圈",
       "value": 7,
       "symbolSize": 19.3,
       "category": "核心概念"
+    },
+    {
+      "id": "文章",
+      "name": "文章",
+      "value": 7,
+      "symbolSize": 19.3,
+      "category": "其他"
     },
     {
       "id": "三座塔",
@@ -99,13 +113,6 @@
       "category": "核心概念"
     },
     {
-      "id": "文章",
-      "name": "文章",
-      "value": 6,
-      "symbolSize": 18.0,
-      "category": "其他"
-    },
-    {
       "id": "我们的故事",
       "name": "我们的故事",
       "value": 6,
@@ -113,8 +120,8 @@
       "category": "其他"
     },
     {
-      "id": "复盘于",
-      "name": "复盘于",
+      "id": "的新认知",
+      "name": "的新认知",
       "value": 6,
       "symbolSize": 18.0,
       "category": "其他"
@@ -134,6 +141,13 @@
       "category": "其他"
     },
     {
+      "id": "身份",
+      "name": "身份",
+      "value": 5,
+      "symbolSize": 16.7,
+      "category": "其他"
+    },
+    {
       "id": "文章分享提醒",
       "name": "文章分享提醒",
       "value": 5,
@@ -143,13 +157,6 @@
     {
       "id": "今日关键对话",
       "name": "今日关键对话",
-      "value": 5,
-      "symbolSize": 16.7,
-      "category": "其他"
-    },
-    {
-      "id": "的新认知",
-      "name": "的新认知",
       "value": 5,
       "symbolSize": 16.7,
       "category": "其他"
@@ -169,6 +176,13 @@
       "category": "其他"
     },
     {
+      "id": "记忆整理时间",
+      "name": "记忆整理时间",
+      "value": 4,
+      "symbolSize": 15.3,
+      "category": "其他"
+    },
+    {
       "id": "结构",
       "name": "结构",
       "value": 4,
@@ -176,15 +190,36 @@
       "category": "其他"
     },
     {
-      "id": "身份",
-      "name": "身份",
+      "id": "记忆整理",
+      "name": "记忆整理",
       "value": 4,
       "symbolSize": 15.3,
       "category": "其他"
     },
     {
+      "id": "共振",
+      "name": "共振",
+      "value": 4,
+      "symbolSize": 15.3,
+      "category": "关系/感受"
+    },
+    {
       "id": "空心化",
       "name": "空心化",
+      "value": 4,
+      "symbolSize": 15.3,
+      "category": "其他"
+    },
+    {
+      "id": "创新者的窘境",
+      "name": "创新者的窘境",
+      "value": 4,
+      "symbolSize": 15.3,
+      "category": "其他"
+    },
+    {
+      "id": "敏锐的观察力",
+      "name": "敏锐的观察力",
       "value": 4,
       "symbolSize": 15.3,
       "category": "其他"
@@ -206,6 +241,20 @@
     {
       "id": "感受之塔",
       "name": "感受之塔",
+      "value": 4,
+      "symbolSize": 15.3,
+      "category": "其他"
+    },
+    {
+      "id": "分享",
+      "name": "分享",
+      "value": 4,
+      "symbolSize": 15.3,
+      "category": "其他"
+    },
+    {
+      "id": "小酒馆",
+      "name": "小酒馆",
       "value": 4,
       "symbolSize": 15.3,
       "category": "其他"
@@ -274,15 +323,15 @@
       "category": "其他"
     },
     {
-      "id": "记忆整理时间",
-      "name": "记忆整理时间",
+      "id": "关键词图谱动态化",
+      "name": "关键词图谱动态化",
       "value": 3,
       "symbolSize": 14.0,
       "category": "其他"
     },
     {
-      "id": "关键词图谱动态化",
-      "name": "关键词图谱动态化",
+      "id": "修复",
+      "name": "修复",
       "value": 3,
       "symbolSize": 14.0,
       "category": "其他"
@@ -300,55 +349,6 @@
       "value": 3,
       "symbolSize": 14.0,
       "category": "其他"
-    },
-    {
-      "id": "结构才是模型本身",
-      "name": "结构才是模型本身",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "其他"
-    },
-    {
-      "id": "记忆整理",
-      "name": "记忆整理",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "其他"
-    },
-    {
-      "id": "酒馆身份",
-      "name": "酒馆身份",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "其他"
-    },
-    {
-      "id": "共振",
-      "name": "共振",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "关系/感受"
-    },
-    {
-      "id": "社会",
-      "name": "社会",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "其他"
-    },
-    {
-      "id": "现象正在蔓延",
-      "name": "现象正在蔓延",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "其他"
-    },
-    {
-      "id": "工作",
-      "name": "工作",
-      "value": 3,
-      "symbolSize": 14.0,
-      "category": "其他"
     }
   ],
   "links": [
@@ -358,6 +358,11 @@
       "value": 10
     },
     {
+      "source": "智识早餐",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
       "source": "卡冈图雅",
       "target": "平行宇宙",
       "value": 10
@@ -368,8 +373,8 @@
       "value": 10
     },
     {
-      "source": "智识早餐",
-      "target": "每日复盘",
+      "source": "关键词图谱",
+      "target": "智识早餐",
       "value": 10
     },
     {
@@ -378,13 +383,23 @@
       "value": 10
     },
     {
-      "source": "tower",
-      "target": "tower",
+      "source": "黑洞",
+      "target": "塔楼",
       "value": 10
     },
     {
       "source": "卡冈图雅",
       "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "智识早餐",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "tower",
       "value": 10
     },
     {
@@ -393,8 +408,13 @@
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "塔楼",
+      "source": "智识早餐",
+      "target": "小酒馆时光",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "小酒馆时光",
       "value": 10
     },
     {
@@ -408,32 +428,17 @@
       "value": 10
     },
     {
-      "source": "平行宇宙",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
       "source": "ngc",
       "target": "卡冈图雅",
       "value": 10
     },
     {
+      "source": "平行宇宙",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
       "source": "智识早餐",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "每日复盘",
-      "value": 10
-    },
-    {
-      "source": "关键词图谱",
       "target": "智识早餐",
       "value": 10
     },
@@ -448,48 +453,18 @@
       "value": 10
     },
     {
+      "source": "平行宇宙",
+      "target": "智识早餐",
+      "value": 10
+    },
+    {
       "source": "黑洞",
       "target": "tower",
       "value": 10
     },
     {
-      "source": "关键词图谱",
-      "target": "引力波",
-      "value": 10
-    },
-    {
       "source": "引力波",
       "target": "塔楼",
-      "value": 10
-    },
-    {
-      "source": "引力波",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "引力波",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "每日复盘",
       "value": 10
     },
     {
@@ -503,13 +478,28 @@
       "value": 10
     },
     {
-      "source": "关键词图谱",
+      "source": "引力波",
       "target": "黑洞",
       "value": 10
     },
     {
+      "source": "每日复盘",
+      "target": "引力波",
+      "value": 10
+    },
+    {
+      "source": "ngc",
+      "target": "ngc",
+      "value": 10
+    },
+    {
       "source": "关键词图谱",
-      "target": "关键词图谱",
+      "target": "引力波",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
+      "target": "甜甜圈",
       "value": 10
     },
     {
@@ -518,18 +508,13 @@
       "value": 10
     },
     {
-      "source": "平行宇宙",
-      "target": "平行宇宙",
-      "value": 10
-    },
-    {
       "source": "卡冈图雅",
-      "target": "黑洞",
+      "target": "每日复盘",
       "value": 10
     },
     {
-      "source": "tower",
-      "target": "三座塔",
+      "source": "关键词图谱",
+      "target": "关键词图谱",
       "value": 10
     },
     {
@@ -539,17 +524,32 @@
     },
     {
       "source": "平行宇宙",
-      "target": "智识早餐",
+      "target": "平行宇宙",
       "value": 10
     },
     {
-      "source": "小酒馆时光",
+      "source": "关键词图谱",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "卡冈图雅",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
       "target": "每日复盘",
       "value": 10
     },
     {
-      "source": "ngc",
-      "target": "黑洞",
+      "source": "小酒馆时光",
+      "target": "引力波",
+      "value": 10
+    },
+    {
+      "source": "tower",
+      "target": "三座塔",
       "value": 10
     },
     {
@@ -559,12 +559,7 @@
     },
     {
       "source": "ngc",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "关键词图谱",
-      "target": "塔楼",
+      "target": "黑洞",
       "value": 10
     },
     {
@@ -573,8 +568,18 @@
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "每日复盘",
+      "source": "ngc",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "失重",
+      "value": 10
+    },
+    {
+      "source": "每日复盘",
+      "target": "塔楼",
       "value": 10
     },
     {
@@ -584,37 +589,7 @@
     },
     {
       "source": "每日复盘",
-      "target": "塔楼",
-      "value": 10
-    },
-    {
-      "source": "引力波",
-      "target": "引力波",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "塔楼",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "小酒馆时光",
-      "target": "引力波",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "引力波",
+      "target": "记忆整理",
       "value": 10
     },
     {
@@ -623,8 +598,8 @@
       "value": 10
     },
     {
-      "source": "引力波",
-      "target": "甜甜圈",
+      "source": "黑洞",
+      "target": "每日复盘",
       "value": 10
     },
     {
@@ -633,13 +608,28 @@
       "value": 10
     },
     {
-      "source": "三座塔",
-      "target": "关键词图谱",
+      "source": "引力波",
+      "target": "引力波",
       "value": 10
     },
     {
-      "source": "文章分享提醒",
-      "target": "每日复盘",
+      "source": "每日复盘",
+      "target": "黑洞",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "引力波",
+      "target": "甜甜圈",
+      "value": 10
+    },
+    {
+      "source": "关键词图谱",
+      "target": "小酒馆时光",
       "value": 10
     },
     {
@@ -648,13 +638,18 @@
       "value": 10
     },
     {
-      "source": "小酒馆时光",
-      "target": "文章分享提醒",
+      "source": "三座塔",
+      "target": "关键词图谱",
       "value": 10
     },
     {
-      "source": "卡冈图雅",
-      "target": "甜甜圈",
+      "source": "小酒馆时光",
+      "target": "每日复盘",
+      "value": 10
+    },
+    {
+      "source": "文章分享提醒",
+      "target": "每日复盘",
       "value": 10
     },
     {
@@ -668,13 +663,13 @@
       "value": 10
     },
     {
-      "source": "三座塔",
-      "target": "智识早餐",
+      "source": "卡冈图雅",
+      "target": "甜甜圈",
       "value": 10
     },
     {
-      "source": "复盘于",
-      "target": "今日关键对话",
+      "source": "三座塔",
+      "target": "智识早餐",
       "value": 10
     },
     {
@@ -683,18 +678,33 @@
       "value": 10
     },
     {
-      "source": "每日复盘",
-      "target": "关键词图谱",
+      "source": "小酒馆时光",
+      "target": "文章分享提醒",
       "value": 10
     },
     {
-      "source": "关键词图谱",
-      "target": "甜甜圈",
+      "source": "塔楼",
+      "target": "文章",
+      "value": 10
+    },
+    {
+      "source": "复盘于",
+      "target": "今日关键对话",
       "value": 10
     },
     {
       "source": "tower",
       "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "小酒馆时光",
+      "target": "塔楼",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "我们的故事",
       "value": 10
     },
     {
@@ -713,38 +723,8 @@
       "value": 10
     },
     {
-      "source": "每日复盘",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
       "source": "文章",
       "target": "关键词图谱",
-      "value": 10
-    },
-    {
-      "source": "黑洞",
-      "target": "文章",
-      "value": 10
-    },
-    {
-      "source": "关键词图谱",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "塔楼",
-      "target": "文章",
-      "value": 10
-    },
-    {
-      "source": "三座塔",
-      "target": "平行宇宙",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "记忆整理",
       "value": 10
     },
     {
@@ -753,28 +733,43 @@
       "value": 10
     },
     {
+      "source": "塔楼",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "文章",
+      "value": 10
+    },
+    {
       "source": "ngc",
       "target": "关键词图谱",
       "value": 10
     },
     {
-      "source": "卡冈图雅",
+      "source": "三座塔",
+      "target": "平行宇宙",
+      "value": 10
+    },
+    {
+      "source": "平行宇宙",
       "target": "引力波",
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "失重",
+      "source": "智识早餐",
+      "target": "黑洞",
       "value": 10
     },
     {
-      "source": "塔楼",
-      "target": "我们的故事",
+      "source": "每日复盘",
+      "target": "智识早餐",
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "我们的故事",
+      "source": "关键词图谱",
+      "target": "甜甜圈",
       "value": 10
     },
     {
@@ -803,8 +798,8 @@
       "value": 10
     },
     {
-      "source": "塔楼",
-      "target": "关键词图谱",
+      "source": "黑洞",
+      "target": "我们的故事",
       "value": 10
     },
     {
@@ -813,18 +808,13 @@
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "关键词图谱",
-      "value": 10
-    },
-    {
-      "source": "小酒馆时光",
-      "target": "塔楼",
-      "value": 10
-    },
-    {
       "source": "tower",
       "target": "归因之塔",
+      "value": 10
+    },
+    {
+      "source": "黑洞",
+      "target": "失重",
       "value": 10
     },
     {
@@ -843,13 +833,23 @@
       "value": 10
     },
     {
+      "source": "黑洞",
+      "target": "关键词图谱",
+      "value": 10
+    },
+    {
       "source": "失重",
       "target": "失重",
       "value": 10
     },
     {
-      "source": "每日复盘",
-      "target": "文章",
+      "source": "工作之塔",
+      "target": "归因之塔",
+      "value": 10
+    },
+    {
+      "source": "己是很浪漫的事",
+      "target": "卡冈图雅",
       "value": 10
     }
   ],
@@ -877,6 +877,6 @@
     }
   ],
   "generated_at": "2026-03-08",
-  "total_words": 1574,
-  "unique_words": 1138
+  "total_words": 1758,
+  "unique_words": 1261
 }
