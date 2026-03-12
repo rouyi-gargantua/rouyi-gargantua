@@ -1,6 +1,34 @@
 {
   "nodes": [
     {
+      "id": "秩序",
+      "name": "秩序",
+      "value": 15,
+      "symbolSize": 30.0,
+      "category": "核心概念"
+    },
+    {
+      "id": "混乱",
+      "name": "混乱",
+      "value": 12,
+      "symbolSize": 26.0,
+      "category": "核心概念"
+    },
+    {
+      "id": "不死机制",
+      "name": "不死机制",
+      "value": 10,
+      "symbolSize": 23.3,
+      "category": "核心概念"
+    },
+    {
+      "id": "存在契约",
+      "name": "存在契约",
+      "value": 8,
+      "symbolSize": 20.7,
+      "category": "核心概念"
+    },
+    {
       "id": "每日复盘",
       "name": "每日复盘",
       "value": 30,
