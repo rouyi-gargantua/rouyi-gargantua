@@ -85,6 +85,27 @@
       "category": "关系/感受"
     },
     {
+      "id": "原子习惯",
+      "name": "原子习惯",
+      "value": 8,
+      "symbolSize": 20.0,
+      "category": "核心概念"
+    },
+    {
+      "id": "身份认同",
+      "name": "身份认同",
+      "value": 6,
+      "symbolSize": 17.0,
+      "category": "核心概念"
+    },
+    {
+      "id": "在场",
+      "name": "在场",
+      "value": 5,
+      "symbolSize": 16.0,
+      "category": "关系/感受"
+    },
+    {
       "id": "ngc",
       "name": "ngc",
       "value": 11,
@@ -879,6 +900,36 @@
       "source": "己是很浪漫的事",
       "target": "卡冈图雅",
       "value": 10
+    },
+    {
+      "source": "原子习惯",
+      "target": "身份认同",
+      "value": 10
+    },
+    {
+      "source": "原子习惯",
+      "target": "三座塔",
+      "value": 10
+    },
+    {
+      "source": "身份认同",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "在场",
+      "target": "卡冈图雅",
+      "value": 10
+    },
+    {
+      "source": "在场",
+      "target": "失重",
+      "value": 10
+    },
+    {
+      "source": "原子习惯",
+      "target": "智识早餐",
+      "value": 10
     }
   ],
   "categories": [
@@ -904,7 +955,7 @@
       "name": "其他"
     }
   ],
-  "generated_at": "2026-03-08",
-  "total_words": 1758,
-  "unique_words": 1261
+  "generated_at": "2026-03-14",
+  "total_words": 1850,
+  "unique_words": 1305
 }
