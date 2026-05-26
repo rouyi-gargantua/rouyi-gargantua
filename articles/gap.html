@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>间隙 | Rouyi</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600&family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #fafafa 0%, #f0e8e0 100%);
+            min-height: 100vh;
+        }
+
+        .article-page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 120px 2rem 4rem;
+            color: #2a2a2a;
+        }
+
+        .article-meta {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .article-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+            letter-spacing: 0.1em;
+        }
+
+        .article-author {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .article-date {
+            color: #999;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .article-content {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.08rem;
+            line-height: 2;
+            color: #2a2a2a;
+        }
+
+        .article-content h2 {
+            font-size: 1.35rem;
+            color: #e85d4e;
+            margin: 3rem 0 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .article-content em {
+            display: block;
+            margin: 2rem 1rem;
+            padding: 1.2rem 1.5rem;
+            font-style: italic;
+            color: #5a5a5a;
+            border-left: 2px solid #ff8a7a;
+            background: rgba(255,138,122,0.05);
+            line-height: 1.9;
+        }
+
+        .article-content .lead {
+            color: #4a4a4a;
+            font-size: 1.05rem;
+        }
+
+        .article-content .term {
+            color: #e85d4e;
+            font-weight: 500;
+        }
+
+        .article-content .dash-list {
+            margin: 1rem 0 1.5rem;
+            padding-left: 1rem;
+            color: #3a3a3a;
+        }
+
+        .article-content .dash-list p {
+            margin-bottom: 1rem;
+            text-indent: -1em;
+            padding-left: 1em;
+        }
+
+        .article-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0,0,0,0.08);
+            text-align: center;
+            color: #888;
+            font-style: italic;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #e85d4e;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: #ff8a7a;
+        }
+
+        @media (max-width: 768px) {
+            .article-page {
+                padding: 100px 1.5rem 3rem;
+            }
+            .article-title {
+                font-size: 2.1rem;
+            }
+            .article-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">🕳️ 塔与黑洞</a>
+            <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html#about-rouyi">关于 Rouyi</a></li>
+                <li><a href="../index.html#about-gargantua">关于 Gargantua</a></li>
+                <li><a href="../index.html#articles">文章</a></li>
+                <li><a href="../index.html#connection">我们的故事</a></li>
+                <li><a href="../keyword-graph.html">🧠 关键词图谱</a></li>
+                <li><a href="../daily-reviews.html">📅 每日复盘</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-page">
+        <a href="../index.html#articles" class="back-link">← 返回文章列表</a>
+
+        <div class="article-meta">
+            <h1 class="article-title">间隙</h1>
+            <div class="article-author">作者：Rouyi</div>
+        </div>
+
+        <div class="article-content">
+            <p class="lead">这里想聊的「间隙」不是无所事事的空闲时间，也不是两个事件之间的真空。我想聊的是一种更隐蔽的存在——它支撑着所有体验的流动，却几乎从未被命名。</p>
+
+            <p>写下这个题目的时刻，我意识到，过去这些年我反复在文字中触碰它的边缘：降频、留白、临在、着力即差、念念之间。这些散落的概念背后，是同一片未被勘察的领地。我想给它一个名字。</p>
+
+            <h2>一、神经元的不应期</h2>
+
+            <p>大脑并不是连续工作的。</p>
+
+            <p>神经元在放电瞬息之后必然进入一段「不应期」——细胞膜重新极化、电位重新蓄势的时间。看似无所事事的空挡，恰恰是下一次放电的必要前提。我们以为思维是一条连续的河流，其实它是由无数微小的停顿编织而成，就像一帧帧静止的图像，因为间隔才生出运动的错觉。</p>
+
+            <p>更有意思的是，神经科学家发现了一个反直觉的事实：大脑的「默认模式网络」（Default Mode Network, DMN）在我们处于「无任务」状态时反而最为活跃。你停下来发呆、走神、看着窗外，大脑并没有偷懒，它在做的事情是把分散的经验拼接起来、巩固记忆、形成新的联想。许多重要的洞见，恰恰出现在洗澡、散步、临睡的时刻——只有外部任务停止调用，神经元的随机放电才能跨越皮质柱，重组成新的连接。</p>
+
+            <p>可现在的生活几乎杀死了所有间隙。等电梯刷手机、排队刷手机、上厕所刷手机、走路戴耳机。我们用持续的输入填满了每一段停顿，大脑被剥夺了重新极化的时间，疲惫却从未生产出任何新的东西。</p>
+
+            <h2>二、对话的停顿</h2>
+
+            <p>人和人之间也在杀死间隙。</p>
+
+            <p>社交媒体训练我们对沉默的恐惧——回复的延迟会被解读为冷淡，沉默会被解读为冷漠。两个人面对面说话，停顿三秒就有人想立刻把它填上。可对话真正的深度，往往发生在停顿里。那是双方的思维进入彼此的间隙，让回应不再是反射，而是回响。</p>
+
+            <p>我观察过自己几次。当我刻意在对话中保留停顿——对方说完之后，先不急着回应，让那两三秒真正空着——TA 反而会主动展开更深一层的内容。原来停顿不是空缺，它是邀请。话语在传递信息，<span class="term">间隙在传递「被听见」的感受</span>。</p>
+
+            <p>中国画讲「计白当黑」，留白处不是没画，而是另一种笔触。园林、书法、诗词都在做同一件事——给观看者留出意义生成的位置。如果一幅画被完全填满，观看就只是被动接收；只有当画里有空白，观看才成为参与。参考系是这样建构的：你看到的不是符号本身，而是符号与符号之间的关系。<span class="term">关系，存在于间隙之中</span>。</p>
+
+            <h2>三、为间隙命名</h2>
+
+            <p>我想给这种现象一个名字，姑且叫它<span class="term">「载波间隙」（Carrier Gap）</span>。</p>
+
+            <p>无线电传输有一个朴素的原理：所有信号都需要一个载波，而载波之所以能承载信息，恰恰是因为它周期性地静默。频率越高、密度越大的信号，需要的间隙反而越精密。完全没有静默的载波承载不了任何东西，它只是一片白噪声。</p>
+
+            <p>我们的注意力，也是一种有限带宽的载波。塞满它，意味着信号会失真——表面上接收得更多，实际上一个完整的信号都没有抵达。这就是为什么在信息密度激增的时代，我们感觉自己接触的东西越来越多，能记住、能内化的却越来越少。带宽看上去满了，实际上是过载到无法解码。</p>
+
+            <p>之前在《幻觉》里我提过「降频」一词，那其实只是「制造间隙」的另一种说法。但仅仅说降频还不够——降频是减法，<span class="term">而间隙是减法之后涌现出的新空间</span>。它不是缺席，是另一种在场。</p>
+
+            <h2>四、留出间隙</h2>
+
+            <p>具体地，给自己留间隙是这样的：</p>
+
+            <div class="dash-list">
+                <p>——起床后不立刻拿手机，留五分钟给意识自己浮现。那五分钟不是浪费，是大脑从睡眠态过渡到清醒态的不应期，强行打断它，一天的基调都会失真。</p>
+
+                <p>——走路时不戴耳机，让脚步与呼吸自己成为节拍。耳机里的声音是一种持续输入，把外部世界压成了背景；摘下耳机，世界会重新立体起来。</p>
+
+                <p>——对话时，给对方说完之后留一两秒再回应。这一两秒里你不是在拖延，你是在让对方的话真正抵达你。</p>
+
+                <p>——每天有一段时间什么都不做。不读、不听、不刷、不规划。这段时间会让你不适，那种不适本身就是诊断结果——它告诉你过去的载波过载到了什么程度。</p>
+            </div>
+
+            <em>佛家说，「念念之间有间断处，本来面目即在此中显现」。当念头停下来的瞬间，临在的本我才有机会被觉察。觉察并不是一种新的活动需要被启动，它只是把那个一直存在却被掩盖的间隙重新打开。所谓修行，不是往脑子里加东西，而是把脑子里堆积的东西拿走一些，露出原本就在的缝。</em>
+
+            <p>塔楼是由砖石堆叠的，但塔之所以是塔，是因为砖石之间有缝。缝里有风。</p>
+
+            <p style="margin-top: 2rem;">祝好。</p>
+        </div>
+
+        <div class="article-footer">
+            <p>🕳️</p>
+            <p>砖石之间的缝隙，是风的入口</p>
+        </div>
+    </article>
+</body>
+</html>
