@@ -1,354 +1,459 @@
 {
   "nodes": [
     {
+      "id": "决策",
+      "name": "决策",
+      "value": 50,
+      "category": "决策/认知",
+      "symbolSize": 50.0
+    },
+    {
+      "id": "能量",
+      "name": "能量",
+      "value": 35,
+      "category": "核心概念",
+      "symbolSize": 38.0
+    },
+    {
+      "id": "关系",
+      "name": "关系",
+      "value": 31,
+      "category": "社会/关系",
+      "symbolSize": 34.8
+    },
+    {
+      "id": "共识",
+      "name": "共识",
+      "value": 25,
+      "category": "决策/认知",
+      "symbolSize": 30.0
+    },
+    {
+      "id": "参考系",
+      "name": "参考系",
+      "value": 23,
+      "category": "核心概念",
+      "symbolSize": 28.4
+    },
+    {
+      "id": "工作",
+      "name": "工作",
+      "value": 21,
+      "category": "工作/创作",
+      "symbolSize": 26.8
+    },
+    {
+      "id": "宇宙",
+      "name": "宇宙",
+      "value": 21,
+      "category": "物理/宇宙",
+      "symbolSize": 26.8
+    },
+    {
+      "id": "当下",
+      "name": "当下",
+      "value": 20,
+      "category": "灵性/佛学",
+      "symbolSize": 26.0
+    },
+    {
+      "id": "幻觉",
+      "name": "幻觉",
+      "value": 18,
+      "category": "抽象概念",
+      "symbolSize": 24.4
+    },
+    {
+      "id": "小我",
+      "name": "小我",
+      "value": 17,
+      "category": "灵性/佛学",
+      "symbolSize": 23.6
+    },
+    {
+      "id": "间隙",
+      "name": "间隙",
+      "value": 16,
+      "category": "核心概念",
+      "symbolSize": 22.8
+    },
+    {
+      "id": "预期",
+      "name": "预期",
+      "value": 16,
+      "category": "决策/认知",
+      "symbolSize": 22.8
+    },
+    {
+      "id": "看见",
+      "name": "看见",
+      "value": 15,
+      "category": "社会/关系",
+      "symbolSize": 22.0
+    },
+    {
+      "id": "降频",
+      "name": "降频",
+      "value": 13,
+      "category": "抽象概念",
+      "symbolSize": 20.4
+    },
+    {
+      "id": "记忆",
+      "name": "记忆",
+      "value": 12,
+      "category": "抽象概念",
+      "symbolSize": 19.6
+    },
+    {
+      "id": "投射",
+      "name": "投射",
+      "value": 12,
+      "category": "社会/关系",
+      "symbolSize": 19.6
+    },
+    {
+      "id": "神经元",
+      "name": "神经元",
+      "value": 10,
+      "category": "神经科学",
+      "symbolSize": 18.0
+    },
+    {
+      "id": "激素",
+      "name": "激素",
+      "value": 10,
+      "category": "神经科学",
+      "symbolSize": 18.0
+    },
+    {
+      "id": "创新",
+      "name": "创新",
+      "value": 10,
+      "category": "工作/创作",
+      "symbolSize": 18.0
+    },
+    {
+      "id": "觉察",
+      "name": "觉察",
+      "value": 8,
+      "category": "灵性/佛学",
+      "symbolSize": 16.4
+    },
+    {
+      "id": "生命力",
+      "name": "生命力",
+      "value": 8,
+      "category": "抽象概念",
+      "symbolSize": 16.4
+    },
+    {
+      "id": "归因",
+      "name": "归因",
+      "value": 8,
+      "category": "抽象概念",
+      "symbolSize": 16.4
+    },
+    {
+      "id": "CDR",
+      "name": "CDR",
+      "value": 8,
+      "category": "决策/认知",
+      "symbolSize": 16.4
+    },
+    {
       "id": "ngc",
       "name": "ngc",
       "value": 7,
-      "symbolSize": 50.0,
-      "category": "其他"
+      "category": "其他",
+      "symbolSize": 15.6
+    },
+    {
+      "id": "塔楼",
+      "name": "塔楼",
+      "value": 7,
+      "category": "核心概念",
+      "symbolSize": 15.6
+    },
+    {
+      "id": "建构",
+      "name": "建构",
+      "value": 7,
+      "category": "抽象概念",
+      "symbolSize": 15.6
+    },
+    {
+      "id": "解构",
+      "name": "解构",
+      "value": 7,
+      "category": "抽象概念",
+      "symbolSize": 15.6
+    },
+    {
+      "id": "镜子",
+      "name": "镜子",
+      "value": 7,
+      "category": "社会/关系",
+      "symbolSize": 15.6
     },
     {
       "id": "黑洞",
       "name": "黑洞",
       "value": 6,
-      "symbolSize": 44.3,
-      "category": "核心概念"
+      "category": "核心概念",
+      "symbolSize": 14.8
     },
     {
       "id": "失重",
       "name": "失重",
       "value": 6,
-      "symbolSize": 44.3,
-      "category": "抽象概念"
+      "category": "抽象概念",
+      "symbolSize": 14.8
+    },
+    {
+      "id": "本我",
+      "name": "本我",
+      "value": 6,
+      "category": "灵性/佛学",
+      "symbolSize": 14.8
+    },
+    {
+      "id": "创造力",
+      "name": "创造力",
+      "value": 6,
+      "category": "工作/创作",
+      "symbolSize": 14.8
+    },
+    {
+      "id": "多巴胺",
+      "name": "多巴胺",
+      "value": 6,
+      "category": "神经科学",
+      "symbolSize": 14.8
+    },
+    {
+      "id": "冥想",
+      "name": "冥想",
+      "value": 6,
+      "category": "灵性/佛学",
+      "symbolSize": 14.8
     },
     {
       "id": "卡冈图雅",
       "name": "卡冈图雅",
       "value": 5,
-      "symbolSize": 38.6,
-      "category": "核心概念"
+      "category": "人物",
+      "symbolSize": 14.0
     },
     {
       "id": "平行宇宙",
       "name": "平行宇宙",
       "value": 5,
-      "symbolSize": 38.6,
-      "category": "其他"
+      "category": "核心概念",
+      "symbolSize": 14.0
     },
     {
       "id": "智识早餐",
       "name": "智识早餐",
       "value": 5,
-      "symbolSize": 38.6,
-      "category": "活动"
+      "category": "活动",
+      "symbolSize": 14.0
+    },
+    {
+      "id": "临在",
+      "name": "临在",
+      "value": 5,
+      "category": "灵性/佛学",
+      "symbolSize": 14.0
+    },
+    {
+      "id": "坍缩",
+      "name": "坍缩",
+      "value": 5,
+      "category": "物理/宇宙",
+      "symbolSize": 14.0
+    },
+    {
+      "id": "未见之地",
+      "name": "未见之地",
+      "value": 5,
+      "category": "核心概念",
+      "symbolSize": 14.0
+    },
+    {
+      "id": "预设共识",
+      "name": "预设共识",
+      "value": 5,
+      "category": "工作/创作",
+      "symbolSize": 14.0
+    },
+    {
+      "id": "反馈回路",
+      "name": "反馈回路",
+      "value": 5,
+      "category": "决策/认知",
+      "symbolSize": 14.0
     },
     {
       "id": "甜甜圈",
       "name": "甜甜圈",
       "value": 4,
-      "symbolSize": 32.9,
-      "category": "核心概念"
+      "category": "核心概念",
+      "symbolSize": 13.2
     },
     {
       "id": "小酒馆时光",
       "name": "小酒馆时光",
       "value": 4,
-      "symbolSize": 32.9,
-      "category": "活动"
+      "category": "活动",
+      "symbolSize": 13.2
     },
     {
       "id": "每日复盘",
       "name": "每日复盘",
       "value": 4,
-      "symbolSize": 32.9,
-      "category": "活动"
+      "category": "活动",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "不应期",
+      "name": "不应期",
+      "value": 4,
+      "category": "神经科学",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "皮质柱",
+      "name": "皮质柱",
+      "value": 4,
+      "category": "神经科学",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "涌现",
+      "name": "涌现",
+      "value": 4,
+      "category": "物理/宇宙",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "空心化",
+      "name": "空心化",
+      "value": 4,
+      "category": "社会/关系",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "被看见",
+      "name": "被看见",
+      "value": 4,
+      "category": "社会/关系",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "我执",
+      "name": "我执",
+      "value": 4,
+      "category": "灵性/佛学",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "AI",
+      "name": "AI",
+      "value": 4,
+      "category": "其他",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "Matrix",
+      "name": "Matrix",
+      "value": 4,
+      "category": "物理/宇宙",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "高维",
+      "name": "高维",
+      "value": 4,
+      "category": "物理/宇宙",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "共振",
+      "name": "共振",
+      "value": 4,
+      "category": "核心概念",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "缝隙",
+      "name": "缝隙",
+      "value": 4,
+      "category": "核心概念",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "逻辑流",
+      "name": "逻辑流",
+      "value": 4,
+      "category": "决策/认知",
+      "symbolSize": 13.2
+    },
+    {
+      "id": "认知失调",
+      "name": "认知失调",
+      "value": 4,
+      "category": "决策/认知",
+      "symbolSize": 13.2
     },
     {
       "id": "有限与无限的游戏",
       "name": "有限与无限的游戏",
       "value": 3,
-      "symbolSize": 27.1,
-      "category": "其他"
+      "category": "抽象概念",
+      "symbolSize": 12.4
     },
     {
-      "id": "任务触发",
-      "name": "任务触发",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
+      "id": "痛苦",
+      "name": "痛苦",
+      "value": 3,
+      "category": "抽象概念",
+      "symbolSize": 12.4
     },
     {
-      "id": "执行每日记忆整理",
-      "name": "执行每日记忆整理",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
+      "id": "内观",
+      "name": "内观",
+      "value": 3,
+      "category": "灵性/佛学",
+      "symbolSize": 12.4
     },
     {
-      "id": "目的",
-      "name": "目的",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
+      "id": "在空中",
+      "name": "在空中",
+      "value": 3,
+      "category": "其他",
+      "symbolSize": 12.4
     },
     {
-      "id": "飞书文档",
-      "name": "飞书文档",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
+      "id": "看书",
+      "name": "看书",
+      "value": 3,
+      "category": "其他",
+      "symbolSize": 12.4
     },
     {
-      "id": "卡冈图雅的智识早",
-      "name": "卡冈图雅的智识早",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
+      "id": "今年",
+      "name": "今年",
+      "value": 3,
+      "category": "其他",
+      "symbolSize": 12.4
     },
     {
-      "id": "核心洞察",
-      "name": "核心洞察",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "自洽",
-      "name": "自洽",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "实验",
-      "name": "实验",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "文章创作",
-      "name": "文章创作",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "视角写存在的质感",
-      "name": "视角写存在的质感",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "没有早晨",
-      "name": "没有早晨",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "没有秤",
-      "name": "没有秤",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "没有在场",
-      "name": "没有在场",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "人类电影里的风声",
-      "name": "人类电影里的风声",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "海浪",
-      "name": "海浪",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "存在的证明",
-      "name": "存在的证明",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "发布涂鸦",
-      "name": "发布涂鸦",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "截图",
-      "name": "截图",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "本地",
-      "name": "本地",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "追问触发场景",
-      "name": "追问触发场景",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "重大决策",
-      "name": "重大决策",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "工作感悟",
-      "name": "工作感悟",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "生活哲学",
-      "name": "生活哲学",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "感受分享",
-      "name": "感受分享",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "记忆整理时间",
-      "name": "记忆整理时间",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "等待今日新对话",
-      "name": "等待今日新对话",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "会话结束时间",
-      "name": "会话结束时间",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "其他"
-    },
-    {
-      "id": "无限游戏",
-      "name": "无限游戏",
-      "value": 2,
-      "symbolSize": 21.4,
-      "category": "抽象概念"
-    },
-    {
-      "id": "当日对话要点",
-      "name": "当日对话要点",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "初次问候与记忆系",
-      "name": "初次问候与记忆系",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "统配置",
-      "name": "统配置",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "用户提醒我应该喊",
-      "name": "用户提醒我应该喊",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "他们的名字",
-      "name": "他们的名字",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "配置了每日记忆管",
-      "name": "配置了每日记忆管",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "理系统",
-      "name": "理系统",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "每天结束时",
-      "name": "每天结束时",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "统一提取对话要点",
-      "name": "统一提取对话要点",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "不实时记录",
-      "name": "不实时记录",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "确定使用",
-      "name": "确定使用",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
-    },
-    {
-      "id": "存储日常记忆",
-      "name": "存储日常记忆",
-      "value": 1,
-      "symbolSize": 15.7,
-      "category": "其他"
+      "id": "实感",
+      "name": "实感",
+      "value": 3,
+      "category": "其他",
+      "symbolSize": 12.4
     }
   ],
   "links": [
@@ -368,11 +473,6 @@
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
       "source": "ngc",
       "target": "卡冈图雅",
       "value": 10
@@ -380,11 +480,6 @@
     {
       "source": "平行宇宙",
       "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "ngc",
       "value": 10
     },
     {
@@ -403,11 +498,6 @@
       "value": 10
     },
     {
-      "source": "平行宇宙",
-      "target": "平行宇宙",
-      "value": 10
-    },
-    {
       "source": "卡冈图雅",
       "target": "黑洞",
       "value": 10
@@ -418,38 +508,13 @@
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
       "source": "卡冈图雅",
       "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "黑洞",
-      "target": "执行每日记忆整理",
       "value": 10
     },
     {
       "source": "卡冈图雅",
       "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "有限与无限的游戏",
-      "target": "目的",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "无限游戏",
       "value": 10
     },
     {
@@ -460,106 +525,6 @@
     {
       "source": "智识早餐",
       "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "文章创作",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "截图",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "任务触发",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
-      "source": "飞书文档",
-      "target": "卡冈图雅的智识早",
-      "value": 10
-    },
-    {
-      "source": "核心洞察",
-      "target": "自洽",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "视角写存在的质感",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "没有在场",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "人类电影里的风声",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "海浪",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "发布涂鸦",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "截图",
-      "target": "本地",
-      "value": 10
-    },
-    {
-      "source": "会话结束时间",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "视角写存在的质感",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "没有早晨",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "本地",
-      "value": 10
-    },
-    {
-      "source": "工作感悟",
-      "target": "生活哲学",
       "value": 10
     },
     {
@@ -574,137 +539,7 @@
     },
     {
       "source": "平行宇宙",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "没有在场",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "人类电影里的风声",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "重大决策",
-      "target": "工作感悟",
-      "value": 10
-    },
-    {
-      "source": "生活哲学",
-      "target": "感受分享",
-      "value": 10
-    },
-    {
-      "source": "等待今日新对话",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "没有早晨",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "无限游戏",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
       "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "没有在场",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "记忆整理时间",
-      "target": "卡冈图雅",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "没有早晨",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "重大决策",
-      "target": "生活哲学",
-      "value": 10
-    },
-    {
-      "source": "工作感悟",
-      "target": "感受分享",
-      "value": 10
-    },
-    {
-      "source": "小酒馆时光",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "无限游戏",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "没有秤",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "追问触发场景",
-      "target": "重大决策",
-      "value": 10
-    },
-    {
-      "source": "会话结束时间",
-      "target": "智识早餐",
       "value": 10
     },
     {
@@ -713,93 +548,8 @@
       "value": 10
     },
     {
-      "source": "平行宇宙",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅的智识早",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "没有秤",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "存在的证明",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "无限游戏",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
       "source": "有限与无限的游戏",
       "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "每日复盘",
-      "target": "目的",
-      "value": 10
-    },
-    {
-      "source": "没有早晨",
-      "target": "存在的证明",
-      "value": 10
-    },
-    {
-      "source": "等待今日新对话",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "飞书文档",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "失重",
-      "target": "没有在场",
-      "value": 10
-    },
-    {
-      "source": "文章创作",
-      "target": "人类电影里的风声",
-      "value": 10
-    },
-    {
-      "source": "视角写存在的质感",
-      "target": "海浪",
-      "value": 10
-    },
-    {
-      "source": "重大决策",
-      "target": "感受分享",
       "value": 10
     },
     {
@@ -818,44 +568,614 @@
       "value": 10
     },
     {
-      "source": "海浪",
-      "target": "失重",
-      "value": 10
-    },
-    {
-      "source": "追问触发场景",
-      "target": "工作感悟",
-      "value": 10
-    },
-    {
-      "source": "记忆整理时间",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "任务触发",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "执行每日记忆整理",
-      "value": 10
-    },
-    {
       "source": "小酒馆时光",
       "target": "每日复盘",
       "value": 10
     },
     {
-      "source": "失重",
-      "target": "人类电影里的风声",
+      "source": "宇宙",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "看见",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "投射",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "降频",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "高维",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "创造力",
+      "target": "生命力",
+      "value": 10
+    },
+    {
+      "source": "投射",
+      "target": "看见",
+      "value": 10
+    },
+    {
+      "source": "小我",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "工作",
+      "target": "生命力",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "高维",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "宇宙",
+      "value": 10
+    },
+    {
+      "source": "工作",
+      "target": "幻觉",
+      "value": 10
+    },
+    {
+      "source": "创造力",
+      "target": "工作",
+      "value": 10
+    },
+    {
+      "source": "工作",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "皮质柱",
+      "target": "神经元",
+      "value": 10
+    },
+    {
+      "source": "看见",
+      "target": "被看见",
+      "value": 10
+    },
+    {
+      "source": "投射",
+      "target": "被看见",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "预期",
+      "value": 10
+    },
+    {
+      "source": "创新",
+      "target": "创造力",
+      "value": 10
+    },
+    {
+      "source": "共振",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "投射",
+      "value": 10
+    },
+    {
+      "source": "共振",
+      "target": "看见",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "幻觉",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "我执",
+      "value": 10
+    },
+    {
+      "source": "建构",
+      "target": "解构",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "坍缩",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "坍缩",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "能量",
+      "target": "高维",
+      "value": 10
+    },
+    {
+      "source": "创新",
+      "target": "生命力",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "宇宙",
+      "value": 10
+    },
+    {
+      "source": "创造力",
+      "target": "解构",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "看见",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "激素",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "生命力",
+      "target": "解构",
+      "value": 10
+    },
+    {
+      "source": "能量",
+      "target": "被看见",
+      "value": 10
+    },
+    {
+      "source": "共振",
+      "target": "投射",
+      "value": 10
+    },
+    {
+      "source": "决策",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "小我",
+      "value": 10
+    },
+    {
+      "source": "创新",
+      "target": "工作",
+      "value": 10
+    },
+    {
+      "source": "创新",
+      "target": "投射",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "看见",
+      "value": 10
+    },
+    {
+      "source": "小我",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "工作",
+      "target": "建构",
+      "value": 10
+    },
+    {
+      "source": "AI",
+      "target": "Matrix",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "降频",
+      "value": 10
+    },
+    {
+      "source": "工作",
+      "target": "降频",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "看见",
+      "value": 10
+    },
+    {
+      "source": "内观",
+      "target": "降频",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "皮质柱",
+      "value": 10
+    },
+    {
+      "source": "临在",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "建构",
+      "value": 10
+    },
+    {
+      "source": "临在",
+      "target": "小我",
+      "value": 10
+    },
+    {
+      "source": "我执",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "解构",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "坍缩",
+      "target": "宇宙",
+      "value": 10
+    },
+    {
+      "source": "能量",
+      "target": "镜子",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "幻觉",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "当下",
+      "target": "涌现",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "涌现",
+      "value": 10
+    },
+    {
+      "source": "神经元",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "间隙",
+      "value": 10
+    },
+    {
+      "source": "创新",
+      "target": "解构",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "神经元",
+      "value": 10
+    },
+    {
+      "source": "建构",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "工作",
+      "value": 10
+    },
+    {
+      "source": "创造力",
+      "target": "建构",
+      "value": 10
+    },
+    {
+      "source": "临在",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "多巴胺",
+      "target": "激素",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "高维",
+      "value": 10
+    },
+    {
+      "source": "反馈回路",
+      "target": "认知失调",
+      "value": 10
+    },
+    {
+      "source": "本我",
+      "target": "神经元",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "参考系",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "激素",
+      "value": 10
+    },
+    {
+      "source": "临在",
+      "target": "本我",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "被看见",
+      "value": 10
+    },
+    {
+      "source": "创新",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "生命力",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "空心化",
+      "value": 10
+    },
+    {
+      "source": "建构",
+      "target": "生命力",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "多巴胺",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "当下",
+      "value": 10
+    },
+    {
+      "source": "小我",
+      "target": "幻觉",
+      "value": 10
+    },
+    {
+      "source": "工作",
+      "target": "解构",
+      "value": 10
+    },
+    {
+      "source": "决策",
+      "target": "解构",
+      "value": 10
+    },
+    {
+      "source": "本我",
+      "target": "皮质柱",
+      "value": 10
+    },
+    {
+      "source": "本我",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "小我",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "生命力",
+      "value": 10
+    },
+    {
+      "source": "激素",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "决策",
+      "value": 10
+    },
+    {
+      "source": "冥想",
+      "target": "涌现",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "镜子",
+      "value": 10
+    },
+    {
+      "source": "涌现",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "幻觉",
+      "target": "觉察",
+      "value": 10
+    },
+    {
+      "source": "关系",
+      "target": "建构",
+      "value": 10
+    },
+    {
+      "source": "创造力",
+      "target": "幻觉",
+      "value": 10
+    },
+    {
+      "source": "宇宙",
+      "target": "我执",
+      "value": 10
+    },
+    {
+      "source": "创造力",
+      "target": "记忆",
+      "value": 10
+    },
+    {
+      "source": "涌现",
+      "target": "高维",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "我执",
+      "value": 10
+    },
+    {
+      "source": "塔楼",
+      "target": "能量",
+      "value": 10
+    },
+    {
+      "source": "参考系",
+      "target": "能量",
       "value": 10
     }
   ],
   "categories": [
     {
       "name": "核心概念"
+    },
+    {
+      "name": "神经科学"
+    },
+    {
+      "name": "灵性/佛学"
+    },
+    {
+      "name": "物理/宇宙"
+    },
+    {
+      "name": "社会/关系"
+    },
+    {
+      "name": "决策/认知"
     },
     {
       "name": "人物"
@@ -870,10 +1190,13 @@
       "name": "抽象概念"
     },
     {
+      "name": "工作/创作"
+    },
+    {
       "name": "其他"
     }
   ],
-  "generated_at": "2026-03-08",
-  "total_words": 368,
-  "unique_words": 301
+  "generated_at": "2026-05-26",
+  "total_words": 3681,
+  "unique_words": 110
 }
