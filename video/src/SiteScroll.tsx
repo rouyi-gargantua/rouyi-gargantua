@@ -9,66 +9,54 @@ import {
 } from "remotion";
 import React from "react";
 
-type Props = {
-  src: string;
-  // 图片自然高度（px）
-  imageHeight: number;
-  // 起始/终止可视区的 y 偏移（0=图片顶部，imageHeight - 720=图片底部）
-  fromY: number;
-  toY: number;
-  // 入场/出场淡入淡出（秒）
-  fadeInSec?: number;
-  fadeOutSec?: number;
-  // 滚动缓动模式
-  easing?: "linear" | "ease";
+type Keyframe = {
+  /** 在 Sequence 内的相对秒数 */
+  sec: number;
+  /** 视口在 displayed 图像上的 y 偏移 */
+  y: number;
 };
 
-// 在画面里以 1280 宽展示，全高扫过
+type Props = {
+  src: string;
+  /** 原始图像高度（px，1920 宽下） */
+  imageHeight: number;
+  /** 关键帧序列；至少 2 个。相邻关键帧之间用 ease 缓动，整体形成"停-移-停"节奏 */
+  keyframes: Keyframe[];
+  fadeInSec?: number;
+  fadeOutSec?: number;
+};
+
+// 渲染宽度固定 1280（视频宽度）。displayed height = imageHeight * 1280/1920
 export const SiteScroll: React.FC<Props> = ({
   src,
   imageHeight,
-  fromY,
-  toY,
+  keyframes,
   fadeInSec = 0.6,
   fadeOutSec = 0.6,
-  easing = "ease",
 }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
 
+  const inputFrames = keyframes.map((k) => k.sec * fps);
+  const outputYs = keyframes.map((k) => k.y);
+
+  const y = interpolate(frame, inputFrames, outputYs, {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+    easing: Easing.bezier(0.45, 0, 0.45, 1),
+  });
+
   const fadeInFrames = fadeInSec * fps;
   const fadeOutFrames = fadeOutSec * fps;
 
-  const easingFn =
-    easing === "linear"
-      ? (t: number) => t
-      : Easing.bezier(0.4, 0, 0.4, 1);
-
-  const y = interpolate(
-    frame,
-    [0, durationInFrames],
-    [fromY, toY],
-    {
-      extrapolateLeft: "clamp",
-      extrapolateRight: "clamp",
-      easing: easingFn,
-    }
-  );
-
   const opacity = interpolate(
     frame,
-    [
-      0,
-      fadeInFrames,
-      durationInFrames - fadeOutFrames,
-      durationInFrames,
-    ],
+    [0, fadeInFrames, durationInFrames - fadeOutFrames, durationInFrames],
     [0, 1, 1, 0],
-    {
-      extrapolateLeft: "clamp",
-      extrapolateRight: "clamp",
-    }
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
+
+  const displayedHeight = imageHeight * (1280 / 1920);
 
   return (
     <AbsoluteFill style={{ overflow: "hidden", opacity }}>
@@ -78,16 +66,12 @@ export const SiteScroll: React.FC<Props> = ({
           left: 0,
           top: -y,
           width: 1280,
-          height: imageHeight * (1280 / 1920),
+          height: displayedHeight,
         }}
       >
         <Img
           src={staticFile(src)}
-          style={{
-            width: 1280,
-            height: imageHeight * (1280 / 1920),
-            display: "block",
-          }}
+          style={{ width: 1280, height: displayedHeight, display: "block" }}
         />
       </div>
     </AbsoluteFill>
