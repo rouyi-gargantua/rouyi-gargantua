@@ -162,13 +162,6 @@
       "symbolSize": 16.4
     },
     {
-      "id": "ngc",
-      "name": "ngc",
-      "value": 7,
-      "category": "其他",
-      "symbolSize": 15.6
-    },
-    {
       "id": "塔楼",
       "name": "塔楼",
       "value": 7,
@@ -253,13 +246,6 @@
       "symbolSize": 14.0
     },
     {
-      "id": "智识早餐",
-      "name": "智识早餐",
-      "value": 5,
-      "category": "活动",
-      "symbolSize": 14.0
-    },
-    {
       "id": "临在",
       "name": "临在",
       "value": 5,
@@ -299,20 +285,6 @@
       "name": "甜甜圈",
       "value": 4,
       "category": "核心概念",
-      "symbolSize": 13.2
-    },
-    {
-      "id": "小酒馆时光",
-      "name": "小酒馆时光",
-      "value": 4,
-      "category": "活动",
-      "symbolSize": 13.2
-    },
-    {
-      "id": "每日复盘",
-      "name": "每日复盘",
-      "value": 4,
-      "category": "活动",
       "symbolSize": 13.2
     },
     {
@@ -463,18 +435,8 @@
       "value": 10
     },
     {
-      "source": "ngc",
-      "target": "平行宇宙",
-      "value": 10
-    },
-    {
       "source": "甜甜圈",
       "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "卡冈图雅",
       "value": 10
     },
     {
@@ -488,88 +450,18 @@
       "value": 10
     },
     {
-      "source": "ngc",
-      "target": "黑洞",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "甜甜圈",
-      "value": 10
-    },
-    {
       "source": "卡冈图雅",
       "target": "黑洞",
       "value": 10
     },
     {
-      "source": "黑洞",
-      "target": "ngc",
-      "value": 10
-    },
-    {
       "source": "卡冈图雅",
       "target": "甜甜圈",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "每日复盘",
-      "value": 10
-    },
-    {
-      "source": "智识早餐",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "甜甜圈",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "平行宇宙",
-      "target": "ngc",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "每日复盘",
-      "value": 10
-    },
-    {
-      "source": "有限与无限的游戏",
-      "target": "小酒馆时光",
-      "value": 10
-    },
-    {
-      "source": "ngc",
-      "target": "智识早餐",
-      "value": 10
-    },
-    {
-      "source": "卡冈图雅",
-      "target": "小酒馆时光",
       "value": 10
     },
     {
       "source": "黑洞",
       "target": "有限与无限的游戏",
-      "value": 10
-    },
-    {
-      "source": "小酒馆时光",
-      "target": "每日复盘",
       "value": 10
     },
     {
@@ -1181,12 +1073,6 @@
       "name": "人物"
     },
     {
-      "name": "地点"
-    },
-    {
-      "name": "活动"
-    },
-    {
       "name": "抽象概念"
     },
     {
@@ -1198,5 +1084,5 @@
   ],
   "generated_at": "2026-05-26",
   "total_words": 3681,
-  "unique_words": 110
+  "unique_words": 61
 }
