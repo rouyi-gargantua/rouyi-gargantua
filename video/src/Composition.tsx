@@ -4,24 +4,14 @@ import React from "react";
 
 import { SiteScroll } from "./SiteScroll";
 import { Cursor } from "./Cursor";
+import { GraphHover } from "./GraphHover";
 
 loadFont("normal", { weights: ["300", "400", "600"] });
 
 /*
- ① Homepage  0–33s
-    Hero → Rouyi → Gargantua → Articles 顶 → Articles 底(塔)
-    末段光标 → 塔 卡片 → 点击 → 切场
-
- ② 塔 文章页  33–51s（18s）
-    标题 → 工作 → 感受 → 滚回顶部
-    末段光标 → 导航「关键词图谱」 → 点击 → 切场
-
- ③ 关键词图谱  51–61s（10s）
-    标题 → 滑到图谱 → 停留观赏
-
- home-full.png：1920×6800（displayed 4533，max y=3813）
- tower-full.png：1920×4500（displayed 3000，max y=2280）
- keyword-graph-full.png：1920×2400（displayed 1600，max y=880）
+ ① Homepage    0–33s   末段光标 → 塔卡片「阅读全文」→ 点击
+ ② 塔 文章页   33–51s   末段光标 → 导航「关键词图谱」→ 点击
+ ③ 关键词图谱  51–65s   标题 → 滑到图谱 → 末段光标 hover 在「能量」节点上，展开关系
 */
 
 export const TowerAndBlackhole: React.FC = () => {
@@ -41,28 +31,26 @@ export const TowerAndBlackhole: React.FC = () => {
           src="shots/home-full.png"
           imageHeight={6800}
           keyframes={[
-            { sec: 0, y: 0 },          // Hero
-            { sec: 5, y: 0 },           // 停 Hero
-            { sec: 7, y: 720 },         // → Rouyi
-            { sec: 12, y: 720 },        // 停 Rouyi
-            { sec: 14, y: 1400 },       // → Gargantua
-            { sec: 19, y: 1400 },       // 停 Gargantua
-            { sec: 21, y: 2200 },       // → Articles 顶
-            { sec: 25, y: 2200 },       // 停 Articles 顶
-            { sec: 27, y: 3200 },       // → Articles 底（塔 居中）
-            { sec: 33, y: 3200 },       // 停在塔卡片
+            { sec: 0, y: 0 },
+            { sec: 5, y: 0 },
+            { sec: 7, y: 720 },
+            { sec: 12, y: 720 },
+            { sec: 14, y: 1400 },
+            { sec: 19, y: 1400 },
+            { sec: 21, y: 2200 },
+            { sec: 25, y: 2200 },
+            { sec: 27, y: 3200 },
+            { sec: 33, y: 3200 },
           ]}
           fadeInSec={0.8}
           fadeOutSec={0.8}
         />
 
-        {/* 光标 → 塔卡片（左下角第 4 行第 1 个）
-            viewport y=2950 时，塔card 在 displayed y~3133-3433
-            在 viewport 内：y 约 183-483，中心 333
-            塔卡片 column 1 中心 x≈240 */}
+        {/* 光标 → 塔卡片「阅读全文 →」链接（卡片底部红字） */}
+        {/* viewport y=3200 时塔卡片在 y≈300-510；阅读全文链接在卡片底部，x≈180, y≈505 */}
         <Cursor
           from={{ x: 1180, y: 640 }}
-          to={{ x: 240, y: 430 }}
+          to={{ x: 180, y: 505 }}
           appearSec={28}
           moveDurSec={2.5}
           clickDelaySec={0.3}
@@ -81,21 +69,20 @@ export const TowerAndBlackhole: React.FC = () => {
           src="shots/tower-full.png"
           imageHeight={4500}
           keyframes={[
-            { sec: 0, y: 0 },          // 标题 + nav 可见
-            { sec: 4, y: 0 },           // 停标题
-            { sec: 6, y: 600 },         // → 工作
-            { sec: 10, y: 600 },        // 停工作
-            { sec: 12, y: 1500 },       // → 感受/末段
-            { sec: 15, y: 1500 },       // 停感受
-            { sec: 16.5, y: 0 },        // 滚回顶部（露出 nav）
-            { sec: 18, y: 0 },          // 停在顶部
+            { sec: 0, y: 0 },
+            { sec: 4, y: 0 },
+            { sec: 6, y: 600 },
+            { sec: 10, y: 600 },
+            { sec: 12, y: 1500 },
+            { sec: 15, y: 1500 },
+            { sec: 16.5, y: 0 },
+            { sec: 18, y: 0 },
           ]}
           fadeInSec={0.8}
           fadeOutSec={0.6}
         />
 
-        {/* 光标 → 导航「🧠 关键词图谱」
-            导航在 displayed y≈40，关键词图谱菜单项 x≈880 */}
+        {/* 光标 → 导航「🧠 关键词图谱」 */}
         <Cursor
           from={{ x: 640, y: 500 }}
           to={{ x: 880, y: 40 }}
@@ -106,10 +93,10 @@ export const TowerAndBlackhole: React.FC = () => {
         />
       </Sequence>
 
-      {/* ③ 关键词图谱 51–61s（10s） */}
+      {/* ③ 关键词图谱 51–65s（14s） */}
       <Sequence
         from={s(51) - s(0.4)}
-        durationInFrames={s(10) + s(0.4)}
+        durationInFrames={s(14) + s(0.4)}
         layout="none"
         name="③ 图谱"
       >
@@ -117,14 +104,19 @@ export const TowerAndBlackhole: React.FC = () => {
           src="shots/keyword-graph-full.png"
           imageHeight={2400}
           keyframes={[
-            { sec: 0, y: 0 },          // 标题
-            { sec: 3, y: 0 },           // 停标题
-            { sec: 5, y: 540 },         // → 图本身
-            { sec: 10, y: 540 },        // 停在图上
+            { sec: 0, y: 0 },
+            { sec: 3, y: 0 },
+            { sec: 5, y: 540 },
+            { sec: 14, y: 540 },
           ]}
           fadeInSec={0.8}
           fadeOutSec={1.0}
         />
+
+        {/* hover 效果：从 7s 起在图上展开关系 */}
+        <Sequence from={s(7)} durationInFrames={s(7)} layout="none" name="hover">
+          <GraphHover />
+        </Sequence>
       </Sequence>
     </AbsoluteFill>
   );
